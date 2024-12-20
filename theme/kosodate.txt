@@ -1,0 +1,933 @@
+{
+  "version": 8,
+  "name": "GSI Japan + OpenStreetMap based style for Geolonia",
+  "sprite": "https://api.geolonia.com/v1/sprites/gsi",
+  "glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
+  "sources": {
+    "oceanus": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/oceanus/tiles.json?key=YOUR-API-KEY"
+    },
+    "gsi-japan": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/gsi_experimental_bvmap/tiles.json?key=YOUR-API-KEY",
+      "minzoom": 5
+    },
+    "geolonia-water": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/water/tiles.json?key=YOUR-API-KEY"
+    },
+    "geolonia-gsi-custom": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/gsi-extra-v2/tiles.json?key=YOUR-API-KEY"
+    },
+    "dem": {
+      "type": "raster-dem",
+      "url": "https://tileserver.geolonia.com/gsi-dem/tiles.json?key=YOUR-API-KEY",
+      "attribution": "<a href=\"https://www.gsi.go.jp/\" target=\"_blank\">&copy; GSI Japan</a>"
+    },
+    "配水管管網図_配水管弁栓": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/yaizu-smartcity-haisuikanbensen/tiles.json?key=YOUR-API-KEY"
+    },
+    "道路台帳図": {
+      "type": "vector",
+      "url": "https://tileserver-dev.geolonia.com/yaizu-smartmap-dourodaicho/tiles.json?key=YOUR-API-KEY"
+    },
+    "路線網図": {
+      "type": "vector",
+      "url": "https://tileserver-dev.geolonia.com/yaizu-smartmap-rosenmouzu/tiles.json?key=YOUR-API-KEY"
+    },
+    "路線価格図": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/yaizu-smartcity-rosenkakakuzu/tiles.json?key=YOUR-API-KEY"
+    },
+    "地形図_都市計画基本図": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/yaizu-smartmap-kihonzu/tiles.json?key=YOUR-API-KEY"
+    },
+    "menu-experiment": {
+      "type": "vector",
+      "url": "https://tileserver-dev.geolonia.com/yaizu-smartmap-20241218-2/tiles.json?key=YOUR-API-KEY"
+    },
+    "航空写真": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-airplane-photo/tiles/{z}/{x}/{y}.png?key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18
+    },
+    "CASE1": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-shizuoka-nankaitrough-tsunami-area/tiles/{z}/{x}/{y}.png?key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "静岡県第４次地震被害想定津波浸水（レベル２津波の重ね合わせ図）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-shizuoka-4th-earthquake-l2_20241121/tiles/{z}/{x}/{y}.png?key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "焼津市全域_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-all_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtYWxsX2Zsb29kLW1heHxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLWFsbF9mbG9vZC1tYXgtMDFKRkFIQURRVjFCTkE3SEtURlgwTVcxVEEjfigmbDUdp5wVrMOB5VjQdxLMuG5JdK5Wb27Y73EVwRo&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "内瀬戸谷川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-uchisetotanigawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtdWNoaXNldG90YW5pZ2F3YV9mbG9vZC1tYXh8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC11Y2hpc2V0b3RhbmlnYXdhX2Zsb29kLW1heC0wMUpGQUo2Nk1CSjRUWlc2MUdHMkYzMlJOMCO2n5bOTPQrqf5VB-ACv5JBlhWBKqQsrkPwul7yHBqUNQ&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "梅田川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-umedagawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtdW1lZGFnYXdhX2Zsb29kLW1heHxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLXVtZWRhZ2F3YV9mbG9vZC1tYXgtMDFKRkFKSjVKQVgxTUVNQ0ZCRVY3V0NSTk4j3MK8z2xd_edoSAX5GRDlkSON6yGIcc1jvpD36xcDzDE&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "瀬戸川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-setogawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtc2V0b2dhd2FfZmxvb2QtbWF4fGFkbWluLXVwbG9hZHMveWFpenUtc21hcnRtYXAtc2V0b2dhd2FfZmxvb2QtbWF4LTAxSkZBSkhRQUFBSkJaRVRDTUJWUEpQOTNaI9AIRpRIe6xCqvXq-bx0bFlYw7j3mQQeD9kcnltOPEx1&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "石脇川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-ishiwakigawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtaXNoaXdha2lnYXdhX2Zsb29kLW1heHxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLWlzaGl3YWtpZ2F3YV9mbG9vZC1tYXgtMDFKRkFKR1o1U0o2NTlCOFZUOUFFNkNEVzAjU5kwLxij8ciZDPcw0Y2zOayPF0bqLhT_Vu3TyC7J2rA&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "黒石川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-kuroishigawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAta3Vyb2lzaGlnYXdhX2Zsb29kLW1heHxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLWt1cm9pc2hpZ2F3YV9mbG9vZC1tYXgtMDFKRkFKSEE3ME1FNlpGODAyRjc2RFlSVDQjAVwk1TLP49VItirve1ffvPAe1OxMdc8STVTyDNMFgk4&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "朝比奈川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-asahinagawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtYXNhaGluYWdhd2FfZmxvb2QtbWF4fGFkbWluLXVwbG9hZHMveWFpenUtc21hcnRtYXAtYXNhaGluYWdhd2FfZmxvb2QtbWF4LTAxSkZBSkdTNjUwNjEzSlNTNEdIQ0JFM0ZZIxLnb0OgK3guhIXGVp0lQEaEy6qOYMv9aiKlvWiXYlFf&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "志太田中川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-shidatanakagawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtc2hpZGF0YW5ha2FnYXdhX2Zsb29kLW1heHxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLXNoaWRhdGFuYWthZ2F3YV9mbG9vZC1tYXgtMDFKRkFKSFRTMTJFWlpSTjBNTlpCQVFaUlQjYnSouo5SBnoaSgYG3eeMlN33yXQb1IWNUdAeR7sXVZE&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "大津谷川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-otsutanigawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtb3RzdXRhbmlnYXdhX2Zsb29kLW1heHxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLW90c3V0YW5pZ2F3YV9mbG9vZC1tYXgtMDFKRkFKSEhFQkgyMFFQVDc5SEU1VkZLUFMjtIn0s4fXipUJ-Dzv-aMIf7zkGccsTLkcLOpnsZBm5HY&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "高草川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-takakusagawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtdGFrYWt1c2FnYXdhX2Zsb29kLW1heHxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLXRha2FrdXNhZ2F3YV9mbG9vZC1tYXgtMDFKRkFKSFhUU1hHSjA5NEtEQzA5WktKMkMjJcnPKuVI8q2ZBUb03PLSgkV_coYL2_RKmf7h55YUGl8&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "栃山川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-tochiyamagawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtdG9jaGl5YW1hZ2F3YV9mbG9vZC1tYXh8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC10b2NoaXlhbWFnYXdhX2Zsb29kLW1heC0wMUpGQUpKME1YWldISFdGSjgwUEpTUUI3NiMAX15iCiKyO85VaMWx09m5dBbcc_sul40qlq9I9cFqQg&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "小石川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-koishigawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAta29pc2hpZ2F3YV9mbG9vZC1tYXh8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC1rb2lzaGlnYXdhX2Zsb29kLW1heC0wMUpGQUpINE5YTUVFSlhaR1lBTTBTTVNQVyPj2mD88NENQrw5W5Bj6aX3om-NQChz32awk7HQYsiWHg&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "葉梨川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-hanashigawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtaGFuYXNoaWdhd2FfZmxvb2QtbWF4fGFkbWluLXVwbG9hZHMveWFpenUtc21hcnRtYXAtaGFuYXNoaWdhd2FfZmxvb2QtbWF4LTAxSkZBSkdXNjA5QjNNNDJXMzBCMzRIMVNGI2pv_6x5oTuE845bmtbF3lJMVaHUK6Yr8BCj2NKONRwK&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "木屋川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-koyagawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAta295YWdhd2FfZmxvb2QtbWF4fGFkbWluLXVwbG9hZHMveWFpenUtc21hcnRtYXAta295YWdhd2FfZmxvb2QtbWF4LTAxSkZBSkg3SE5US1Q5MUE3SEpSS04wQVJKI207b4gSdwv64YsQUDGRcNzNwt127zQbaFyQBftmlykr&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "大井川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-ooigawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtb29pZ2F3YV9mbG9vZC1tYXh8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC1vb2lnYXdhX2Zsb29kLW1heC0wMUpGQUpIREc5WTI2WDZEMUtIQkQwSkRFSyOMkjAU7irfZG2C4iDVAGjb4VkRXcrnCCgZE-6KLILIFQ&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "成案寺川_洪水浸水想定区域_想定最大規模": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-seanjigawa_flood-max/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtc2VhbmppZ2F3YV9mbG9vZC1tYXh8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC1zZWFuamlnYXdhX2Zsb29kLW1heC0wMUpGQUpITVAzTjZTOVhOVjdHRVA2MzFROSPLbXhff3N_TtxT12P2I-2zNAw91ve9Z8jSOoX49Yzueg&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "焼津市全域_洪水浸水想定区域（計画規模）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-all_flood-planned/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtYWxsX2Zsb29kLXBsYW5uZWR8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC1hbGxfZmxvb2QtcGxhbm5lZC0wMUpGQkhKSktHUFRQQzdHODJXMVcxWjA2WSOQRGaUtu755iYhO4vxygARHjfB3trcNUvko7c4no_jIQ&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "大井川_洪水浸水想定区域（計画規模）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-ooigawa_flood-planned/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtb29pZ2F3YV9mbG9vZC1wbGFubmVkfGFkbWluLXVwbG9hZHMveWFpenUtc21hcnRtYXAtb29pZ2F3YV9mbG9vZC1wbGFubmVkLTAxSkZCSEpTSjhRNFpTRjIwQjcyQ0pWRVdaI6bIPpGmqJhh8e66qGYagV-2IYhahTztnW-NWr84dTYv&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "瀬戸川_洪水浸水想定区域（計画規模）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-setogawa_flood-planned/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtc2V0b2dhd2FfZmxvb2QtcGxhbm5lZHxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLXNldG9nYXdhX2Zsb29kLXBsYW5uZWQtMDFKRkJISzBCWldOWVBUVDI2SkcyRlc4WDcjdMobMeGJCjKkWnYdn5AJdJeSsI-MClyJ5xQJyh6CfgI&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "木屋川_洪水浸水想定区域（計画規模）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-koyagawa_flood-planned/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAta295YWdhd2FfZmxvb2QtcGxhbm5lZHxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLWtveWFnYXdhX2Zsb29kLXBsYW5uZWQtMDFKRkJISlBOQjNQRFo2SlJSRVdaVjdYUk0jGOGDFOYZo38VitN6VKGErHplroZz0Dr0JNry29SBfkY&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "栃山川_洪水浸水想定区域（計画規模）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-tochiyamagawa_flood-planned/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtdG9jaGl5YW1hZ2F3YV9mbG9vZC1wbGFubmVkfGFkbWluLXVwbG9hZHMveWFpenUtc21hcnRtYXAtdG9jaGl5YW1hZ2F3YV9mbG9vZC1wbGFubmVkLTAxSkZCSEs2TkJTQTRCQjlTSEI3QzdFUFpNIzIEUUJBkUMo0kwZ7bQE0HN9OJyzJGc6vrRCpcXPA7-U&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "大津谷川_洪水浸水想定区域（計画規模）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-otsutanigawa_flood-planned/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtb3RzdXRhbmlnYXdhX2Zsb29kLXBsYW5uZWR8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC1vdHN1dGFuaWdhd2FfZmxvb2QtcGxhbm5lZC0wMUpGQkhKWDhSUDNWNkpSTTdOU0RTTUJSSCMvHWAI6s9u0i8juGk0H04JyIJwMvo7Sl3aXHcwvHwTnw&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "志太田中川_洪水浸水想定（計画規模）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-shidatanakagawa_flood-planned/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtc2hpZGF0YW5ha2FnYXdhX2Zsb29kLXBsYW5uZWR8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC1zaGlkYXRhbmFrYWdhd2FfZmxvb2QtcGxhbm5lZC0wMUpGQkhLM1FGUzBGOEYyMVNaNzFOQTZEVyPVkoh-nzjWeNaVYWXqRCPDfF4tZ73_6p_3FhKfxJVwUQ&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "焼津市全域_洪水浸水想定区域（浸水継続時間）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-all_flood-duration/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtYWxsX2Zsb29kLWR1cmF0aW9ufGFkbWluLXVwbG9hZHMveWFpenUtc21hcnRtYXAtYWxsX2Zsb29kLWR1cmF0aW9uLTAxSkZDMjM2TkNFOEE4WlY1RlpXUTFUNjdQI72n4lnDlqr_qS3dvbGif0AlepOAnvK3E1Vx_MjVLXsc&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "大井川_洪水浸水想定区域（浸水継続時間）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-ooigawa_flood-duration_modified/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtb29pZ2F3YV9mbG9vZC1kdXJhdGlvbl9tb2RpZmllZHxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLW9vaWdhd2FfZmxvb2QtZHVyYXRpb25fbW9kaWZpZWQtMDFKRkMyM0tRRTBOOE02RlJaWlBYWTdNVEsjb6TUQ42ra-hBJK2eSP06FX90ArT2yTi5_X9jzEWntEw&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "葉梨川_洪水浸水想定区域（浸水継続時間）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-hanashigawa_flood-duration_modified/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtaGFuYXNoaWdhd2FfZmxvb2QtZHVyYXRpb25fbW9kaWZpZWR8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC1oYW5hc2hpZ2F3YV9mbG9vZC1kdXJhdGlvbl9tb2RpZmllZC0wMUpGQzIzRFJBTVYzWFRDUlY0WVJCUUVIUyOyqbE2vnFeS_9BZw94HXS20jBUsE7o_rmOXEyGSp0CYA&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "朝比奈川_洪水浸水想定区域（浸水継続時間）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-asahinagawa_flood-duration_modified/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtYXNhaGluYWdhd2FfZmxvb2QtZHVyYXRpb25fbW9kaWZpZWR8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC1hc2FoaW5hZ2F3YV9mbG9vZC1kdXJhdGlvbl9tb2RpZmllZC0wMUpGQzIzQUtEQkFQUkpXMkNKSE45Q0pWNCOv1qiFcrLRZll0zMjGPpeTcM-NM60iPJiH7OxfIPrruw&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "瀬戸川_洪水浸水想定区域（浸水継続時間）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-setogawa_flood-duration_modified/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtc2V0b2dhd2FfZmxvb2QtZHVyYXRpb25fbW9kaWZpZWR8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC1zZXRvZ2F3YV9mbG9vZC1kdXJhdGlvbl9tb2RpZmllZC0wMUpGQzIzVDFETjRKNDZSSENUNkc3VlBGMSM4etkawiLQc6u4jK6mqi1X2xklmi7fEC1D6aIWymyDbA&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "木屋川_洪水浸水想定区域（浸水継続時間）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-koyagawa_flood-duration_modified/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAta295YWdhd2FfZmxvb2QtZHVyYXRpb25fbW9kaWZpZWR8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC1rb3lhZ2F3YV9mbG9vZC1kdXJhdGlvbl9tb2RpZmllZC0wMUpGQzIzR1ZZWEFDQzg4MUg3QjlLV1lFOCOfdwjLULNhmI_ow4g0dWNl2dx8qQUUG8aFUeQo_0hXDQ&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "栃山川_洪水浸水想定区域（浸水継続時間）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-tochiyamagawa_flood-duration_modified/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtdG9jaGl5YW1hZ2F3YV9mbG9vZC1kdXJhdGlvbl9tb2RpZmllZHxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLXRvY2hpeWFtYWdhd2FfZmxvb2QtZHVyYXRpb25fbW9kaWZpZWQtMDFKRkMyM1pWWVE3MEowUzdaNTZHWkNKRFojC5eX3JK7qasK2odfocPvh5KVdzgW8GfTWFIWWxO0-OY&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "大津谷川_洪水浸水想定区域（浸水継続時間）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-otsutanigawa_flood-duration_modified/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtb3RzdXRhbmlnYXdhX2Zsb29kLWR1cmF0aW9uX21vZGlmaWVkfGFkbWluLXVwbG9hZHMveWFpenUtc21hcnRtYXAtb3RzdXRhbmlnYXdhX2Zsb29kLWR1cmF0aW9uX21vZGlmaWVkLTAxSkZDMjNRNENHRURIR1FLNEtGU1lLMzZBI7KZF6uvKMllQBtCXF86Bop_8GzzniSe6NN1Rp0RaowV&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "志太田中川_洪水浸水想定区域（浸水継続時間）": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-shidatanakagawa_flood-duration_modified/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtc2hpZGF0YW5ha2FnYXdhX2Zsb29kLWR1cmF0aW9uX21vZGlmaWVkfGFkbWluLXVwbG9hZHMveWFpenUtc21hcnRtYXAtc2hpZGF0YW5ha2FnYXdhX2Zsb29kLWR1cmF0aW9uX21vZGlmaWVkLTAxSkZDMjNYNFlBNDZLMlQxTVdGMVFWODJaI8I_8TmmNT2ZBas2uO_iuv708Hw-rSmd9df6Iy_TRMzO&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "gsidem": {
+      "type": "raster-dem",
+      "url": "https://tileserver.geolonia.com/gsi-dem/tiles.json?key=YOUR-API-KEY"
+    },
+    "EvacuationShelter": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "WeatherForecast": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "WeatherAlert": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "PrecipitationGauge": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "StreamGauge": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "CameraInformation": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "RestrictedTrafficAreaInformation": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "UnderpassInformation": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "Disasterreports": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EvacuationInformationFlood": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EvacuationInformationStormSurge": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EvacuationInformationEarthquake": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EvacuationInformationTsunami": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EvacuationInformationNuclearPower": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    }
+  },
+  "layers": [
+    {
+      "id": "子育て・教育/学校・保育施設/幼稚園・保育所-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "幼稚園_保育所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "子育て・教育/学校・保育施設/幼稚園・保育所"
+      }
+    },
+    {
+      "id": "子育て・教育/学校・保育施設/幼稚園・保育所-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "幼稚園_保育所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 2,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "子育て・教育/学校・保育施設/幼稚園・保育所"
+      }
+    },
+    {
+      "id": "子育て・教育/学校・保育施設/幼稚園・保育所-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "幼稚園_保育所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          2,
+          14,
+          3,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "子育て・教育/学校・保育施設/幼稚園・保育所"
+      }
+    },
+    {
+      "id": "子育て・教育/学校・保育施設/幼稚園・保育所-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "幼稚園_保育所",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "has",
+            "_title"
+          ]
+        ]
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.6,
+        "circle-stroke-width": 2,
+        "circle-stroke-color": "rgb(199, 21, 133)",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "子育て・教育/学校・保育施設/幼稚園・保育所"
+      }
+    },
+    {
+      "id": "子育て・教育/学校・保育施設/幼稚園・保育所-Label",
+      "type": "symbol",
+      "source": "menu-experiment",
+      "source-layer": "幼稚園_保育所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "_title"
+        ],
+        "text-size": 14,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2
+      },
+      "paint": {
+        "text-color": "rgb(199, 21, 133)",
+        "text-halo-width": 1.5,
+        "text-halo-color": "#ffffff"
+      },
+      "metadata": {
+        "menuId": "子育て・教育/学校・保育施設/幼稚園・保育所"
+      }
+    },
+    {
+      "id": "子育て・教育/学校・保育施設/放課後等デイサービス-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "放課後等デイサービス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "子育て・教育/学校・保育施設/放課後等デイサービス"
+      }
+    },
+    {
+      "id": "子育て・教育/学校・保育施設/放課後等デイサービス-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "放課後等デイサービス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 2,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "子育て・教育/学校・保育施設/放課後等デイサービス"
+      }
+    },
+    {
+      "id": "子育て・教育/学校・保育施設/放課後等デイサービス-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "放課後等デイサービス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          2,
+          14,
+          3,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "子育て・教育/学校・保育施設/放課後等デイサービス"
+      }
+    },
+    {
+      "id": "子育て・教育/学校・保育施設/放課後等デイサービス-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "放課後等デイサービス",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "has",
+            "_title"
+          ]
+        ]
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.6,
+        "circle-stroke-width": 2,
+        "circle-stroke-color": "rgb(199, 21, 133)",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "子育て・教育/学校・保育施設/放課後等デイサービス"
+      }
+    },
+    {
+      "id": "子育て・教育/学校・保育施設/放課後等デイサービス-Label",
+      "type": "symbol",
+      "source": "menu-experiment",
+      "source-layer": "放課後等デイサービス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "_title"
+        ],
+        "text-size": 14,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2
+      },
+      "paint": {
+        "text-color": "rgb(199, 21, 133)",
+        "text-halo-width": 1.5,
+        "text-halo-color": "#ffffff"
+      },
+      "metadata": {
+        "menuId": "子育て・教育/学校・保育施設/放課後等デイサービス"
+      }
+    },
+    {
+      "id": "子育て・教育/子育て支援施設/あかちゃんえき-Polygon",
+      "type": "fill",
+      "source": "menu-experiment",
+      "source-layer": "あかちゃんえき",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "fill-color": "rgb(199, 21, 133)",
+        "fill-opacity": 0.35
+      },
+      "metadata": {
+        "menuId": "子育て・教育/子育て支援施設/あかちゃんえき"
+      }
+    },
+    {
+      "id": "子育て・教育/子育て支援施設/あかちゃんえき-Polygon-outline",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "あかちゃんえき",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": 2,
+        "line-opacity": 0.6
+      },
+      "metadata": {
+        "menuId": "子育て・教育/子育て支援施設/あかちゃんえき"
+      }
+    },
+    {
+      "id": "子育て・教育/子育て支援施設/あかちゃんえき-LineString",
+      "type": "line",
+      "source": "menu-experiment",
+      "source-layer": "あかちゃんえき",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "paint": {
+        "line-color": "rgb(199, 21, 133)",
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          12,
+          2,
+          14,
+          3,
+          20,
+          5
+        ]
+      },
+      "metadata": {
+        "menuId": "子育て・教育/子育て支援施設/あかちゃんえき"
+      }
+    },
+    {
+      "id": "子育て・教育/子育て支援施設/あかちゃんえき-Point",
+      "type": "circle",
+      "source": "menu-experiment",
+      "source-layer": "あかちゃんえき",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "has",
+            "_title"
+          ]
+        ]
+      ],
+      "paint": {
+        "circle-radius": 7,
+        "circle-color": "rgb(199, 21, 133)",
+        "circle-opacity": 0.6,
+        "circle-stroke-width": 2,
+        "circle-stroke-color": "rgb(199, 21, 133)",
+        "circle-stroke-opacity": 1
+      },
+      "metadata": {
+        "menuId": "子育て・教育/子育て支援施設/あかちゃんえき"
+      }
+    },
+    {
+      "id": "子育て・教育/子育て支援施設/あかちゃんえき-Label",
+      "type": "symbol",
+      "source": "menu-experiment",
+      "source-layer": "あかちゃんえき",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "_title"
+        ],
+        "text-size": 14,
+        "text-font": [
+          "Noto Sans Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2
+      },
+      "paint": {
+        "text-color": "rgb(199, 21, 133)",
+        "text-halo-width": 1.5,
+        "text-halo-color": "#ffffff"
+      },
+      "metadata": {
+        "menuId": "子育て・教育/子育て支援施設/あかちゃんえき"
+      }
+    }
+  ]
+}
