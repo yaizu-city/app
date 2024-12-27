@@ -1,30 +1,79 @@
 {
   "version": 8,
-  "name": "GSI Japan + OpenStreetMap based style for Geolonia",
-  "sprite": "https://api.geolonia.com/v1/sprites/gsi",
-  "glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
+  "name": "geoloniamaps/smartcity-base",
+  "metadata": {
+    "geolonia:minzoom": 4,
+    "geolonia:maxzoom": 20
+  },
+  "center": [
+    137.94,
+    34.55
+  ],
+  "zoom": 4,
+  "sprite": [
+    {
+      "id": "geolonia-gsi",
+      "url": "https://api.geolonia.com/v1/sprites/gsi"
+    },
+    {
+      "id": "gsi",
+      "url": "https://gsi-cyberjapan.github.io/optimal_bvmap/sprite/std"
+    }
+  ],
+  "glyphs": "https://gsi-cyberjapan.github.io/optimal_bvmap/glyphs/{fontstack}/{range}.pbf",
   "sources": {
-    "oceanus": {
+    "gsi": {
       "type": "vector",
-      "url": "https://tileserver.geolonia.com/oceanus/tiles.json?key=YOUR-API-KEY"
+      "minzoom": 4,
+      "maxzoom": 16,
+      "tiles": [
+        "pmtiles://https://cyberjapandata.gsi.go.jp/xyz/optimal_bvmap-v1/optimal_bvmap-v1.pmtiles/{z}/{x}/{y}"
+      ],
+      "attribution": "国土地理院最適化ベクトルタイル(標準地図風スタイル)"
     },
-    "gsi-japan": {
-      "type": "vector",
-      "url": "https://tileserver.geolonia.com/gsi_experimental_bvmap/tiles.json?key=YOUR-API-KEY",
-      "minzoom": 5
+    "satellite": {
+      "type": "raster",
+      "tileSize": 256,
+      "tiles": [
+        "https://cyberjapandata.gsi.go.jp/xyz/seamlessphoto/{z}/{x}/{y}.jpg"
+      ],
+      "attribution": "写真シームレス地図"
     },
-    "geolonia-water": {
-      "type": "vector",
-      "url": "https://tileserver.geolonia.com/water/tiles.json?key=YOUR-API-KEY"
-    },
-    "geolonia-gsi-custom": {
-      "type": "vector",
-      "url": "https://tileserver.geolonia.com/gsi-extra-v2/tiles.json?key=YOUR-API-KEY"
-    },
-    "dem": {
+    "terrain": {
       "type": "raster-dem",
-      "url": "https://tileserver.geolonia.com/gsi-dem/tiles.json?key=YOUR-API-KEY",
-      "attribution": "<a href=\"https://www.gsi.go.jp/\" target=\"_blank\">&copy; GSI Japan</a>"
+      "url": "https://tileserver.geolonia.com/gsi-dem/tiles.json?key=YOUR-API-KEY"
+    },
+    "area-measurement": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "distance-measurement": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "search-result": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "measurement-results": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "地形図_都市計画基本図": {
+      "type": "vector",
+      "url": "https://tileserver.geolonia.com/yaizu-smartmap-kihonzu/tiles.json?key=YOUR-API-KEY"
     },
     "配水管管網図_配水管弁栓": {
       "type": "vector",
@@ -32,7 +81,7 @@
     },
     "道路台帳図": {
       "type": "vector",
-      "url": "https://tileserver-dev.geolonia.com/yaizu-smartmap-dourodaicho/tiles.json?key=YOUR-API-KEY"
+      "url": "https://tileserver-dev.geolonia.com/yaizu-smartmap-dourodaicho-v2/tiles.json?key=YOUR-API-KEY"
     },
     "路線網図": {
       "type": "vector",
@@ -42,13 +91,9 @@
       "type": "vector",
       "url": "https://tileserver.geolonia.com/yaizu-smartcity-rosenkakakuzu/tiles.json?key=YOUR-API-KEY"
     },
-    "地形図_都市計画基本図": {
-      "type": "vector",
-      "url": "https://tileserver.geolonia.com/yaizu-smartmap-kihonzu/tiles.json?key=YOUR-API-KEY"
-    },
     "menu-experiment": {
       "type": "vector",
-      "url": "https://tileserver-dev.geolonia.com/yaizu-smartmap-20241218-2/tiles.json?key=YOUR-API-KEY"
+      "url": "https://tileserver-dev.geolonia.com/yaizu-smartmap-20241227/tiles.json?key=YOUR-API-KEY"
     },
     "航空写真": {
       "type": "raster",
@@ -59,10 +104,20 @@
       "minzoom": 10,
       "maxzoom": 18
     },
-    "CASE1": {
+    "地震予測図": {
       "type": "raster",
       "tiles": [
-        "https://tileserver.geolonia.com/yaizu-shizuoka-nankaitrough-tsunami-area/tiles/{z}/{x}/{y}.png?key=YOUR-API-KEY"
+        "https://tileserver.geolonia.com/yaizu-smartmap-shindobunpu/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtc2hpbmRvYnVucHV8YWRtaW4tdXBsb2Fkcy95YWl6dS1zbWFydG1hcC1zaGluZG9idW5wdS0wMUpGWTlGRzE1VDdCSlhRUTJQU1k4TlYzTiP8BmltEvFgZ7AbtdKg7djJVPCvEaVsVGPshOWpe6gKgg&key=YOUR-API-KEY"
+      ],
+      "tileSize": 256,
+      "minzoom": 10,
+      "maxzoom": 18,
+      "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
+    },
+    "液状化": {
+      "type": "raster",
+      "tiles": [
+        "https://tileserver.geolonia.com/yaizu-smartmap-ekijyouka/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtZWtpanlvdWthfGFkbWluLXVwbG9hZHMveWFpenUtc21hcnRtYXAtZWtpanlvdWthLTAxSkcwNTZOWFhRQk1UTkpGQUhUOFhNWkVaI3kGu2YpRPXXVDMk0_MykR8ek8rKaS9gxzJwC5M4jj0c&key=YOUR-API-KEY"
       ],
       "tileSize": 256,
       "minzoom": 10,
@@ -72,7 +127,7 @@
     "静岡県第４次地震被害想定津波浸水（レベル２津波の重ね合わせ図）": {
       "type": "raster",
       "tiles": [
-        "https://tileserver.geolonia.com/yaizu-shizuoka-4th-earthquake-l2_20241121/tiles/{z}/{x}/{y}.png?key=YOUR-API-KEY"
+        "https://tileserver.geolonia.com/yaizu-smartmap-4th-tsunami-shinsui/tiles/{z}/{x}/{y}.png?v=eWFpenUtc21hcnRtYXAtNHRoLXRzdW5hbWktc2hpbnN1aXxhZG1pbi11cGxvYWRzL3lhaXp1LXNtYXJ0bWFwLTR0aC10c3VuYW1pLXNoaW5zdWktMDFKRzFRRjFTQ1hLNUhaRzJZWkRGSk1XM1gjLfrbRh2tvRwxB46BnVq1eJAP4L5jhCAiR9miZwWJ3hk&key=YOUR-API-KEY"
       ],
       "tileSize": 256,
       "minzoom": 10,
@@ -399,10 +454,6 @@
       "maxzoom": 18,
       "attribution": "<a href='https://www.city.yaizu.lg.jp/smartcity-yaizu/' target='_blank'>焼津市 スマートシティYAIZUデータ</a>"
     },
-    "gsidem": {
-      "type": "raster-dem",
-      "url": "https://tileserver.geolonia.com/gsi-dem/tiles.json?key=YOUR-API-KEY"
-    },
     "EvacuationShelter": {
       "type": "geojson",
       "data": {
@@ -504,7 +555,7 @@
   },
   "layers": [
     {
-      "id": "子育て・教育/学校・保育施設/幼稚園・保育所-Polygon",
+      "id": "こども・教育/子育て/幼稚園・保育所-Polygon",
       "type": "fill",
       "source": "menu-experiment",
       "source-layer": "幼稚園_保育所",
@@ -520,11 +571,11 @@
         "fill-opacity": 0.35
       },
       "metadata": {
-        "menuId": "子育て・教育/学校・保育施設/幼稚園・保育所"
+        "menuId": "こども・教育/子育て/幼稚園・保育所"
       }
     },
     {
-      "id": "子育て・教育/学校・保育施設/幼稚園・保育所-Polygon-outline",
+      "id": "こども・教育/子育て/幼稚園・保育所-Polygon-outline",
       "type": "line",
       "source": "menu-experiment",
       "source-layer": "幼稚園_保育所",
@@ -541,11 +592,11 @@
         "line-opacity": 0.6
       },
       "metadata": {
-        "menuId": "子育て・教育/学校・保育施設/幼稚園・保育所"
+        "menuId": "こども・教育/子育て/幼稚園・保育所"
       }
     },
     {
-      "id": "子育て・教育/学校・保育施設/幼稚園・保育所-LineString",
+      "id": "こども・教育/子育て/幼稚園・保育所-LineString",
       "type": "line",
       "source": "menu-experiment",
       "source-layer": "幼稚園_保育所",
@@ -575,11 +626,11 @@
         ]
       },
       "metadata": {
-        "menuId": "子育て・教育/学校・保育施設/幼稚園・保育所"
+        "menuId": "こども・教育/子育て/幼稚園・保育所"
       }
     },
     {
-      "id": "子育て・教育/学校・保育施設/幼稚園・保育所-Point",
+      "id": "こども・教育/子育て/幼稚園・保育所-Point",
       "type": "circle",
       "source": "menu-experiment",
       "source-layer": "幼稚園_保育所",
@@ -609,11 +660,11 @@
         "circle-stroke-opacity": 1
       },
       "metadata": {
-        "menuId": "子育て・教育/学校・保育施設/幼稚園・保育所"
+        "menuId": "こども・教育/子育て/幼稚園・保育所"
       }
     },
     {
-      "id": "子育て・教育/学校・保育施設/幼稚園・保育所-Label",
+      "id": "こども・教育/子育て/幼稚園・保育所-Label",
       "type": "symbol",
       "source": "menu-experiment",
       "source-layer": "幼稚園_保育所",
@@ -642,14 +693,14 @@
         "text-halo-color": "#ffffff"
       },
       "metadata": {
-        "menuId": "子育て・教育/学校・保育施設/幼稚園・保育所"
+        "menuId": "こども・教育/子育て/幼稚園・保育所"
       }
     },
     {
-      "id": "子育て・教育/学校・保育施設/放課後等デイサービス-Polygon",
+      "id": "こども・教育/子育て/子育て支援施設-Polygon",
       "type": "fill",
       "source": "menu-experiment",
-      "source-layer": "放課後等デイサービス",
+      "source-layer": "子育て支援施設",
       "filter": [
         "==",
         [
@@ -662,14 +713,14 @@
         "fill-opacity": 0.35
       },
       "metadata": {
-        "menuId": "子育て・教育/学校・保育施設/放課後等デイサービス"
+        "menuId": "こども・教育/子育て/子育て支援施設"
       }
     },
     {
-      "id": "子育て・教育/学校・保育施設/放課後等デイサービス-Polygon-outline",
+      "id": "こども・教育/子育て/子育て支援施設-Polygon-outline",
       "type": "line",
       "source": "menu-experiment",
-      "source-layer": "放課後等デイサービス",
+      "source-layer": "子育て支援施設",
       "filter": [
         "==",
         [
@@ -683,14 +734,14 @@
         "line-opacity": 0.6
       },
       "metadata": {
-        "menuId": "子育て・教育/学校・保育施設/放課後等デイサービス"
+        "menuId": "こども・教育/子育て/子育て支援施設"
       }
     },
     {
-      "id": "子育て・教育/学校・保育施設/放課後等デイサービス-LineString",
+      "id": "こども・教育/子育て/子育て支援施設-LineString",
       "type": "line",
       "source": "menu-experiment",
-      "source-layer": "放課後等デイサービス",
+      "source-layer": "子育て支援施設",
       "filter": [
         "==",
         [
@@ -717,14 +768,14 @@
         ]
       },
       "metadata": {
-        "menuId": "子育て・教育/学校・保育施設/放課後等デイサービス"
+        "menuId": "こども・教育/子育て/子育て支援施設"
       }
     },
     {
-      "id": "子育て・教育/学校・保育施設/放課後等デイサービス-Point",
+      "id": "こども・教育/子育て/子育て支援施設-Point",
       "type": "circle",
       "source": "menu-experiment",
-      "source-layer": "放課後等デイサービス",
+      "source-layer": "子育て支援施設",
       "filter": [
         "all",
         [
@@ -751,14 +802,14 @@
         "circle-stroke-opacity": 1
       },
       "metadata": {
-        "menuId": "子育て・教育/学校・保育施設/放課後等デイサービス"
+        "menuId": "こども・教育/子育て/子育て支援施設"
       }
     },
     {
-      "id": "子育て・教育/学校・保育施設/放課後等デイサービス-Label",
+      "id": "こども・教育/子育て/子育て支援施設-Label",
       "type": "symbol",
       "source": "menu-experiment",
-      "source-layer": "放課後等デイサービス",
+      "source-layer": "子育て支援施設",
       "filter": [
         "==",
         [
@@ -784,11 +835,11 @@
         "text-halo-color": "#ffffff"
       },
       "metadata": {
-        "menuId": "子育て・教育/学校・保育施設/放課後等デイサービス"
+        "menuId": "こども・教育/子育て/子育て支援施設"
       }
     },
     {
-      "id": "子育て・教育/子育て支援施設/あかちゃんえき-Polygon",
+      "id": "こども・教育/子育て/あかちゃんえき-Polygon",
       "type": "fill",
       "source": "menu-experiment",
       "source-layer": "あかちゃんえき",
@@ -804,11 +855,11 @@
         "fill-opacity": 0.35
       },
       "metadata": {
-        "menuId": "子育て・教育/子育て支援施設/あかちゃんえき"
+        "menuId": "こども・教育/子育て/あかちゃんえき"
       }
     },
     {
-      "id": "子育て・教育/子育て支援施設/あかちゃんえき-Polygon-outline",
+      "id": "こども・教育/子育て/あかちゃんえき-Polygon-outline",
       "type": "line",
       "source": "menu-experiment",
       "source-layer": "あかちゃんえき",
@@ -825,11 +876,11 @@
         "line-opacity": 0.6
       },
       "metadata": {
-        "menuId": "子育て・教育/子育て支援施設/あかちゃんえき"
+        "menuId": "こども・教育/子育て/あかちゃんえき"
       }
     },
     {
-      "id": "子育て・教育/子育て支援施設/あかちゃんえき-LineString",
+      "id": "こども・教育/子育て/あかちゃんえき-LineString",
       "type": "line",
       "source": "menu-experiment",
       "source-layer": "あかちゃんえき",
@@ -859,11 +910,11 @@
         ]
       },
       "metadata": {
-        "menuId": "子育て・教育/子育て支援施設/あかちゃんえき"
+        "menuId": "こども・教育/子育て/あかちゃんえき"
       }
     },
     {
-      "id": "子育て・教育/子育て支援施設/あかちゃんえき-Point",
+      "id": "こども・教育/子育て/あかちゃんえき-Point",
       "type": "circle",
       "source": "menu-experiment",
       "source-layer": "あかちゃんえき",
@@ -893,11 +944,11 @@
         "circle-stroke-opacity": 1
       },
       "metadata": {
-        "menuId": "子育て・教育/子育て支援施設/あかちゃんえき"
+        "menuId": "こども・教育/子育て/あかちゃんえき"
       }
     },
     {
-      "id": "子育て・教育/子育て支援施設/あかちゃんえき-Label",
+      "id": "こども・教育/子育て/あかちゃんえき-Label",
       "type": "symbol",
       "source": "menu-experiment",
       "source-layer": "あかちゃんえき",
@@ -926,7 +977,7 @@
         "text-halo-color": "#ffffff"
       },
       "metadata": {
-        "menuId": "子育て・教育/子育て支援施設/あかちゃんえき"
+        "menuId": "こども・教育/子育て/あかちゃんえき"
       }
     }
   ]
