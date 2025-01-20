@@ -6,5 +6,9 @@
     {
       "name": "子育て",
       "styleUrl": "https://yaizu-city.github.io/app/theme/kosodate.txt"
+    },
+    {
+      "name": "まちづくり",
+      "styleUrl": "https://yaizu-city.github.io/app/theme/machidukuri.txt"
     }
 ]
