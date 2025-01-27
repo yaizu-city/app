@@ -1,14 +1,30 @@
 [
     {
-      "name": "重要防災施設",
-      "styleUrl": "https://yaizu-city.github.io/app/theme/bousai.txt"
+      "name": "災害",
+      "styleUrl": "https://yaizu-city.github.io/app/theme/saigai.txt"
+    },
+    {
+      "name": "観光",
+      "styleUrl": "https://yaizu-city.github.io/app/theme/kankou.txt"
+    },
+    {
+      "name": "さくら並木",
+      "styleUrl": "https://yaizu-city.github.io/app/theme/sakuranamiki.txt"
     },
     {
       "name": "子育て",
       "styleUrl": "https://yaizu-city.github.io/app/theme/kosodate.txt"
     },
     {
-      "name": "まちづくり",
-      "styleUrl": "https://yaizu-city.github.io/app/theme/machidukuri.txt"
+      "name": "文化",
+      "styleUrl": "https://yaizu-city.github.io/app/theme/bunka.txt"
+    },
+    {
+      "name": "公共施設",
+      "styleUrl": "https://yaizu-city.github.io/app/theme/koukyoshisetsu.txt"
+    },
+    {
+      "name": "洪水ハザード",
+      "styleUrl": "https://yaizu-city.github.io/app/theme/kouzuihazado.txt"
     }
 ]
