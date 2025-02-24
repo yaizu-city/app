@@ -1,30 +1,30 @@
 [
     {
       "name": "災害",
-      "styleUrl": "https://yaizu-city.github.io/app/theme/saigai.txt"
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/saigai.txt"
     },
     {
       "name": "観光",
-      "styleUrl": "https://yaizu-city.github.io/app/theme/kankou.txt"
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/kankou.txt"
     },
     {
       "name": "さくら並木",
-      "styleUrl": "https://yaizu-city.github.io/app/theme/sakuranamiki.txt"
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/sakuranamiki.txt"
     },
     {
       "name": "子育て",
-      "styleUrl": "https://yaizu-city.github.io/app/theme/kosodate.txt"
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/kosodate.txt"
     },
     {
       "name": "文化",
-      "styleUrl": "https://yaizu-city.github.io/app/theme/bunka.txt"
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/bunka.txt"
     },
     {
       "name": "公共施設",
-      "styleUrl": "https://yaizu-city.github.io/app/theme/koukyoshisetsu.txt"
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/koukyoshisetsu.txt"
     },
     {
       "name": "洪水ハザード",
-      "styleUrl": "https://yaizu-city.github.io/app/theme/kouzuihazado.txt"
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/kouzuihazado.txt"
     }
 ]
