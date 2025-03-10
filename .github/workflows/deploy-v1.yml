@@ -1,0 +1,8 @@
+name: ⚠️スマートマップを本番にデプロイ
+on: workflow_dispatch
+jobs:
+  deploy-v1:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo "スマートマップを本番にデプロイしました"
