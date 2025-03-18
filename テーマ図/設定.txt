@@ -26,5 +26,9 @@
     {
       "name": "洪水ハザード",
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/kouzuihazado.txt"
+    },
+    {
+      "name": "フォトスポット",
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/photospot.txt"
     }
 ]
