@@ -25,8 +25,13 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Install dependencies
+        run: npm ci
+
       - name: Convert Excel to app.yml
-        run: node ./bin/configToMenuYAML.js ./メニュー/焼津スマートマップメニューテンプレート.xlsx ./app.yml
+        run: |
+          node bin/xlsx2json.js ./メニュー/焼津スマートマップメニューテンプレート.xlsx 
+          node ./bin/configToMenuYAML.js data.json ./app.yml
 
       # - name: Configure AWS Credentials
       #   if : github.ref == 'refs/heads/main'
