@@ -1,0 +1,39 @@
+name: Build and Deploy app.yml on main
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'メニュー/**.xlsx'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Convert Excel to app.yml
+        run: node ./bin/configToMenuYAML.js ./メニュー/焼津スマートマップメニューテンプレート.xlsx ./app.yml
+
+      # - name: Configure AWS Credentials
+      #   uses: aws-actions/configure-aws-credentials@v4
+      #   with:
+      #     role-to-assume: arn:aws:iam::302263045312:role/yaizu-smartcity-jp-github-actions-deploy-v1
+      #     aws-region: ap-northeast-1
+
+      # - name: Deploy app.yml to S3
+      #   run: |
+      #     aws s3 cp app.yml s3://maps-yaizu-smartcity-jp-frontend-dev/public/app.yml \
+      #       --cache-control "public,max-age=60"
+
+      #     aws cloudfront create-invalidation \
+      #       --distribution-id "ENI2MYYW0W5YR" \
+      #       --paths "/public/app.yml"
