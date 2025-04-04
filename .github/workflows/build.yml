@@ -6,6 +6,11 @@ on:
       - main
     paths:
       - 'メニュー/**.xlsx'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'メニュー/**.xlsx'
 
 jobs:
   build-and-deploy:
@@ -24,12 +29,14 @@ jobs:
         run: node ./bin/configToMenuYAML.js ./メニュー/焼津スマートマップメニューテンプレート.xlsx ./app.yml
 
       # - name: Configure AWS Credentials
+      #   if : github.ref == 'refs/heads/main'
       #   uses: aws-actions/configure-aws-credentials@v4
       #   with:
       #     role-to-assume: arn:aws:iam::302263045312:role/yaizu-smartcity-jp-github-actions-deploy-v1
       #     aws-region: ap-northeast-1
 
       # - name: Deploy app.yml to S3
+      #   if : github.ref == 'refs/heads/main'
       #   run: |
       #     aws s3 cp app.yml s3://maps-yaizu-smartcity-jp-frontend-dev/public/app.yml \
       #       --cache-control "public,max-age=60"
