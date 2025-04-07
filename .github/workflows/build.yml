@@ -4,13 +4,10 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'メニュー/**.xlsx'
+
   pull_request:
     branches:
       - main
-    paths:
-      - 'メニュー/**.xlsx'
 
 permissions:
   contents: read
