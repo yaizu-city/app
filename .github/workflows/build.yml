@@ -30,7 +30,7 @@ jobs:
 
       - name: Convert Excel to app.yml
         run: |
-          node bin/xlsx2json.js ./メニュー/焼津スマートマップメニューテンプレート.xlsx 
+          node bin/xlsx2json.js ./メニュー/メニュー.xlsx 
           node ./bin/configToMenuYAML.js data.json ./app.yml
 
       - name: Configure AWS Credentials
