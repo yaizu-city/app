@@ -12,6 +12,10 @@ on:
     paths:
       - 'メニュー/**.xlsx'
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
