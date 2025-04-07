@@ -34,12 +34,14 @@ jobs:
           node ./bin/configToMenuYAML.js data.json ./app.yml
 
       - name: Configure AWS Credentials
+        if: github.ref == 'refs/heads/main'
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::302263045312:role/maps-yaizu-smartcity-jp-github-actions-deploy-v1
           aws-region: ap-northeast-1
   
       - name: Deploy to S3
+        if: github.ref == 'refs/heads/main'
         run: |
           aws s3 sync ./dist s3://maps-yaizu-smartcity-jp-frontend-v1 \
             --include "app.yml" \
