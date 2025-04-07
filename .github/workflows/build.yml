@@ -38,17 +38,18 @@ jobs:
           node ./bin/configToMenuYAML.js data.json ./app.yml
 
       - name: Configure AWS Credentials
-        if: github.ref == 'refs/heads/main'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::302263045312:role/maps-yaizu-smartcity-jp-github-actions-deploy-v1
+          role-to-assume: arn:aws:iam::302263045312:role/dev-maps-yaizu-smartcity-jp-github-actions-deploy-dev
           aws-region: ap-northeast-1
   
       - name: Deploy to S3
-        if: github.ref == 'refs/heads/main'
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
-          aws s3 sync ./dist s3://maps-yaizu-smartcity-jp-frontend-v1 \
-            --include "app.yml" \
-            --cache-control "public,max-age=60"
+          aws s3 sync ./dist s3://dev-maps-yaizu-smartcity-jp-frontend-dev \
+            --delete \
+            --cache-control "public,max-age=60" \
+            --exclude "app.yml"
           
-          aws cloudfront create-invalidation --distribution-id "E2RMR3GLW2EGUT" --paths "/*"
+          aws cloudfront create-invalidation --distribution-id "EFX61YORGLNRP" --paths "/*"
