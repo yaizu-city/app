@@ -1,5 +1,10 @@
 name: ⚠️スマートマップを本番にデプロイ
 on: workflow_dispatch
+
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   deploy-v1:
     runs-on: ubuntu-latest
