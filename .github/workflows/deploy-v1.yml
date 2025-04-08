@@ -38,7 +38,7 @@ jobs:
 
       - name: app.ymlを開発環境からダウンロード
         run: |
-          aws s3 cp s3://dev-maps-yaizu-smartcity-jp-frontend-dev/app.yml ./app.yml --exact-timestamps
+          aws s3 cp s3://dev-maps-yaizu-smartcity-jp-frontend-dev/app.yml ./app.yml
 
 
       - name: Configure AWS Credentials
