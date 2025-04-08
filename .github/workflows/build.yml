@@ -44,7 +44,5 @@ jobs:
       - name: Deploy to S3
         if: github.ref == 'refs/heads/main'
         run: |
-          aws s3 sync ./ s3://dev-maps-yaizu-smartcity-jp-frontend-dev \
-            --include "app.yml"
-          
+          aws s3 cp app.yml s3://dev-maps-yaizu-smartcity-jp-frontend-dev/
           aws cloudfront create-invalidation --distribution-id "EFX61YORGLNRP" --paths "/app.yml"
