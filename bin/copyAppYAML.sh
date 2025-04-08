@@ -12,6 +12,7 @@ TMP_MODIFIED="app.smartmap.yml"
 echo "🔁 URL置換を実行中..."
 sed 's|https://yaizu-smartcity.jp/tiles/opendata/|https://yaizu-smartcity.jp/tiles/smartmap/|g' "$TMP_ORIGINAL" > "$TMP_MODIFIED"
 
+cat "$TMP_MODIFIED"
 # # 3. 本番環境バケットへアップロード
 # echo "⬆️ アップロード: $DEST_S3"
 # aws s3 cp "$TMP_MODIFIED" "$DEST_S3"
