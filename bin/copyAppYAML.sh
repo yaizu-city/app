@@ -2,20 +2,11 @@
 set -ex
 
 # S3 パス
-SOURCE_S3="s3://dev-maps-yaizu-smartcity-jp-frontend-dev/app.yml"
 DEST_S3="s3://maps-yaizu-smartcity-jp-frontend-v1/app.yml"
 
 # ローカルファイル名
 TMP_ORIGINAL="app.yml"
 TMP_MODIFIED="app.smartmap.yml"
-
-# 1. 開発環境バケットから app.yml をダウンロード
-echo "⬇️ ダウンロード: $SOURCE_S3"
-aws s3 cp "$SOURCE_S3" "$TMP_ORIGINAL"
-if [ $? -ne 0 ]; then
-  echo "❌ S3からのダウンロードに失敗しました"
-  exit 1
-fi
 
 # 2. URLを置換
 echo "🔁 URL置換を実行中..."

@@ -29,6 +29,17 @@ jobs:
       - name: CloudFront Invalidation
         run: |
           aws cloudfront create-invalidation --distribution-id "ENI2MYYW0W5YR" --paths "/tiles/smartmap/*"
+  
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::302263045312:role/dev-maps-yaizu-smartcity-jp-github-actions-deploy-dev
+          aws-region: ap-northeast-1
+
+      - name: app.ymlを開発環境からダウンロード
+        run: |
+          aws s3 cp s3://dev-maps-yaizu-smartcity-jp-frontend-dev/app.yml ./app.yml --exact-timestamps
+
 
       - name: Configure AWS Credentials
         if : github.ref == 'refs/heads/main'
