@@ -13,24 +13,6 @@ jobs:
         uses: actions/checkout@v4
         
       - name: Configure AWS Credentials
-        if : github.ref == 'refs/heads/main'
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          role-to-assume: arn:aws:iam::302263045312:role/yaizu-smartcity-jp-github-actions-deploy-v1
-          aws-region: ap-northeast-1
-
-      - name: タイルを本番環境にコピー
-        run: |
-          # タイルを本番環境に上書きコピー
-          aws s3 sync s3://yaizu-smartcity-jp-frontend-v1/tiles/opendata/ s3://yaizu-smartcity-jp-frontend-v1/tiles/smartmap/ --exact-timestamps
-          # 差分を削除
-          aws s3 sync s3://yaizu-smartcity-jp-frontend-v1/tiles/opendata/ s3://yaizu-smartcity-jp-frontend-v1/tiles/smartmap/ --exact-timestamps --delete
-
-      - name: CloudFront Invalidation
-        run: |
-          aws cloudfront create-invalidation --distribution-id "ENI2MYYW0W5YR" --paths "/tiles/smartmap/*"
-  
-      - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
           role-to-assume: arn:aws:iam::302263045312:role/dev-maps-yaizu-smartcity-jp-github-actions-deploy-dev
@@ -50,8 +32,8 @@ jobs:
           
       - name: app.ymlを本番環境にコピー
         run: |
-          bash bin/copyAppYAML.sh
+          aws s3 cp ./app.yml s3://maps-yaizu-smartcity-jp-frontend/app.yml
 
-      # - name: CloudFront Invalidation
-      #   run: |
-      #     aws cloudfront create-invalidation --distribution-id "E2RMR3GLW2EGUT" --paths "/app.yml"
+      - name: CloudFront Invalidation
+        run: |
+          aws cloudfront create-invalidation --distribution-id "E2RMR3GLW2EGUT" --paths "/app.yml"
