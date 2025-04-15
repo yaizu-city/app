@@ -32,7 +32,7 @@ jobs:
           
       - name: app.ymlを本番環境にコピー
         run: |
-          aws s3 cp ./app.yml s3://maps-yaizu-smartcity-jp-frontend/app.yml
+          aws s3 cp ./app.yml s3://maps-yaizu-smartcity-jp-frontend-v1/app.yml
 
       - name: CloudFront Invalidation
         run: |
