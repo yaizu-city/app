@@ -1,0 +1,30 @@
+name: Check 出展.csv
+
+on:
+  push:
+    paths:
+      - "印刷/出展.csv" # 出展.csvに変更があった場合にトリガー
+
+permissions:
+  contents: write
+
+jobs:
+  validate_csv:
+    name: Validate 出展.csv Format
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm install csv-parser
+
+      - name: Validate CSV format
+        run: node scripts/csv-validator.js 印刷/出展.csv
+        
