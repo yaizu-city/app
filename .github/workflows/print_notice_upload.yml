@@ -1,0 +1,44 @@
+name: Convert and Upload 注意書き.csv
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "印刷/注意書き.csv"
+
+permissions:
+  contents: write
+
+jobs:
+  convert_csv_to_json:
+    name: Convert 注意書き.csv to JSON and Upload to S3
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18"
+
+      - name: Install dependencies
+        run: npm install csv-parser
+
+      - name: Convert CSV to JSON
+        run: |
+          node scripts/csv-to-json.js 印刷/注意書き.csv 印刷/注意書き.json
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ap-northeast-1
+
+      - name: Upload JSON to S3
+        run: |
+          aws s3 cp 印刷/注意書き.json s3://your-s3-bucket-name/path/to/注意書き.json
+          
