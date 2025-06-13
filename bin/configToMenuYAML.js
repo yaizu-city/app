@@ -331,13 +331,13 @@ const configToMenuYAML = async (config, outputFile) => {
               }
             }
           },
-          "災害パトロール": {
-            "id": "災害パトロール",
-            "type": "data",
-            "dataType": "fiware",
-            "dataId": "Disasterreports",
-            "shortId": "6y9",
-          }
+          // "災害パトロール": {
+          //   "id": "災害パトロール",
+          //   "type": "data",
+          //   "dataType": "fiware",
+          //   "dataId": "Disasterreports",
+          //   "shortId": "6y9",
+          // }
         }
       },
       "焼津市データ": {
