@@ -8,8 +8,8 @@
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/kankou.txt"
     },
     {
-      "name": "さくら並木",
-      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/sakuranamiki.txt"
+      "name": "涼みどころ",
+      "styleUrl": "https://github.com/yaizu-city/app/blob/main/テーマ図/machinakasuzumidokoro.txt"
     },
     {
       "name": "子育て",
