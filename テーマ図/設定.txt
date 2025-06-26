@@ -9,7 +9,7 @@
     },
     {
       "name": "涼みどころ",
-      "styleUrl": "https://github.com/yaizu-city/app/blob/main/テーマ図/machinakasuzumidokoro.txt"
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/machinakasuzumidokoro.txt"
     },
     {
       "name": "子育て",
