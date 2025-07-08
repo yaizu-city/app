@@ -104,7 +104,7 @@ const getTileIdFromTilesJson = async (item) => {
 const determineDataType = (dataRefUrl) => {
   if (dataRefUrl.includes('{z}/{x}/{y}.png')) {
     // yaizu-smartmap-shindobunpu / yaizu-smartmap-ekijyouka / yaizu-smartmap-4th-tsunami-shinsui / _flood-max / _flood-duration が含まれている場合は datapng
-    if (dataRefUrl.includes('yaizu-smartmap-shindobunpu') || dataRefUrl.includes('yaizu-smartmap-ekijyouka') || dataRefUrl.includes('yaizu-smartmap-4th-tsunami-shinsui') || dataRefUrl.includes('_flood-max') || dataRefUrl.includes('_flood-duration')) {
+    if (dataRefUrl.includes('yaizu-smartmap-shindobunpu') || dataRefUrl.includes('yaizu-smartmap-ekijyouka') || dataRefUrl.includes('yaizu-smartmap-4th-tsunami-shinsui') || dataRefUrl.includes('_flood-max') || dataRefUrl.includes('_flood-duration') || dataRefUrl.includes('_flood-planned')) {
       return 'datapng';
     } else {
       return 'raster';
