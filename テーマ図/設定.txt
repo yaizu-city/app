@@ -4,8 +4,8 @@
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/saigai.txt"
     },
     {
-      "name": "観光",
-      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/kankou.txt"
+      "name": "デジタルクーポン",
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/digitalcoupon.txt"
     },
     {
       "name": "涼みどころ",
