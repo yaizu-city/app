@@ -58,7 +58,7 @@ const generateLegendType = (dataRefUrl) => {
   return null;
 }
 
-const  generateShortId = (tileLayerName) => {
+const generateShortId = (tileLayerName) => {
   // ハッシュ値を計算（djb2アルゴリズム）
   let hash = 5381;
   for (let i = 0; i < tileLayerName.length; i++) {
@@ -270,8 +270,8 @@ const configToMenuYAML = async (config, outputFile) => {
                       "dataType": "Alert"
                     }
                   },
-                  "警報・注意報": {
-                    "id": "リアルタイム防災情報/気象情報/警報・注意報",
+                  "気象／警報・注意報": {
+                    "id": "リアルタイム防災情報/気象情報/気象／警報・注意報",
                     "type": "data",
                     "dataType": "fiware",
                     "dataId": "WeatherAlert",
@@ -280,6 +280,16 @@ const configToMenuYAML = async (config, outputFile) => {
                       "dataType": "Alert"
                     }
                   }
+                }
+              },
+              "地震情報／津波警報・注意報":{
+                "id": "リアルタイム防災情報/地震情報／津波警報・注意報",
+                "type": "data",
+                "dataType": "fiware",
+                "dataId": "EarthquakeAndTsunamiAlert",
+                "shortId": "diW",
+                "metadata": {
+                  "dataType": "Alert"
                 }
               },
               "雨量・水位観測情報": {
