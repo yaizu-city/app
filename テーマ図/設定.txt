@@ -3,7 +3,7 @@
       "name": "災害",
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/saigai.txt"
     },
-　　{
+    {
       "name": "災害ごみ受入場所",
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/saigaigomi.txt"
     },
