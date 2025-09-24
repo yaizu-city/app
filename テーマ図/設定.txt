@@ -4,8 +4,8 @@
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/saigai.txt"
     },
     {
-      "name": "災害ごみ受入場所",
-      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/saigaigomi.txt"
+      "name": "野菜摂取量を測ろう",
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/vegecheck.txt"
     },
     {
       "name": "観光",
