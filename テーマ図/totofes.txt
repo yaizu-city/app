@@ -38495,7 +38495,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-color": [
@@ -61171,7 +61171,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -61228,7 +61228,7 @@
         "LineString"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -71951,7 +71951,7 @@
           0,
           1
         ],
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -103527,7 +103527,7 @@
           "_rotate"
         ],
         "icon-image": "parking",
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "icon-color": [
