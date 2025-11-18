@@ -1,13 +1,5 @@
 [
     {
-      "name": "魚フェス！",
-      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/totofes.txt"
-    },
-    {
-      "name": "魚フェス！周辺飲食・お買い物",
-      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/tachiyori.txt"
-    },
-    {
       "name": "災害",
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/saigai.txt"
     },
