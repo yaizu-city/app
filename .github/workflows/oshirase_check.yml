@@ -1,0 +1,33 @@
+name: Check and Convert お知らせ.csv
+
+on:
+  push:
+    paths:
+      - "お知らせ.csv" # このファイルに変更があった場合にトリガー
+
+permissions:
+  contents: write # リポジトリへの書き込み権限を付与
+
+jobs:
+  validate_csv:
+    name: Validate お知らせ.csv Format
+    runs-on: ubuntu-latest
+
+    steps:
+      # リポジトリのコードをチェックアウト
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      # Node.jsをセットアップ
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "18" # 必要なNode.jsのバージョンを指定
+
+      # 必要な依存関係をインストール
+      - name: Install dependencies
+        run: npm install csv-parser
+
+      # CSVフォーマットを検証
+      - name: Validate CSV format
+        run: node scripts/csv-validator.js お知らせ.csv
