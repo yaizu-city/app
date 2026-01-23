@@ -4,6 +4,10 @@
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/saigai.txt"
     },
     {
+      "name": "デジタルクーポン祭",
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/digitalcoupon.txt"
+    },
+    {
       "name": "野菜摂取量を測ろう",
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/vegecheck.txt"
     },
