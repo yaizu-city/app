@@ -107,6 +107,10 @@
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E6%B6%88%E9%98%B2%E6%B0%B4%E5%88%A9%E6%96%BD%E8%A8%AD%E4%B8%80%E8%A6%A7/tiles.json"
     },
+    "災害時協力井戸": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E7%81%BD%E5%AE%B3%E6%99%82%E5%8D%94%E5%8A%9B%E4%BA%95%E6%88%B8/tiles.json"
+    },
     "防災倉庫一覧": {
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E9%98%B2%E7%81%BD%E5%80%89%E5%BA%AB%E4%B8%80%E8%A6%A7/tiles.json"
@@ -314,6 +318,26 @@
     "お食事": {
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E3%81%8A%E9%A3%9F%E4%BA%8B/tiles.json"
+    },
+    "焼津海の幸グルメマップ_ミナミマグロ": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E7%84%BC%E6%B4%A5%E6%B5%B7%E3%81%AE%E5%B9%B8%E3%82%B0%E3%83%AB%E3%83%A1%E3%83%9E%E3%83%83%E3%83%97_%E3%83%9F%E3%83%8A%E3%83%9F%E3%83%9E%E3%82%B0%E3%83%AD/tiles.json"
+    },
+    "焼津海の幸グルメマップ_カツオ": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E7%84%BC%E6%B4%A5%E6%B5%B7%E3%81%AE%E5%B9%B8%E3%82%B0%E3%83%AB%E3%83%A1%E3%83%9E%E3%83%83%E3%83%97_%E3%82%AB%E3%83%84%E3%82%AA/tiles.json"
+    },
+    "焼津海の幸グルメマップ_サバ": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E7%84%BC%E6%B4%A5%E6%B5%B7%E3%81%AE%E5%B9%B8%E3%82%B0%E3%83%AB%E3%83%A1%E3%83%9E%E3%83%83%E3%83%97_%E3%82%B5%E3%83%90/tiles.json"
+    },
+    "焼津海の幸グルメマップ_サクラエビ": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E7%84%BC%E6%B4%A5%E6%B5%B7%E3%81%AE%E5%B9%B8%E3%82%B0%E3%83%AB%E3%83%A1%E3%83%9E%E3%83%83%E3%83%97_%E3%82%B5%E3%82%AF%E3%83%A9%E3%82%A8%E3%83%93/tiles.json"
+    },
+    "焼津海の幸グルメマップ_シラス": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E7%84%BC%E6%B4%A5%E6%B5%B7%E3%81%AE%E5%B9%B8%E3%82%B0%E3%83%AB%E3%83%A1%E3%83%9E%E3%83%83%E3%83%97_%E3%82%B7%E3%83%A9%E3%82%B9/tiles.json"
     },
     "ショップ": {
       "type": "vector",
@@ -591,6 +615,26 @@
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85_2019/tiles.json"
     },
+    "ドライブコンテスト_スマホ使用": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88_%E3%82%B9%E3%83%9E%E3%83%9B%E4%BD%BF%E7%94%A8/tiles.json"
+    },
+    "ドライブコンテスト_急ハンドル": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88_%E6%80%A5%E3%83%8F%E3%83%B3%E3%83%89%E3%83%AB/tiles.json"
+    },
+    "ドライブコンテスト_急ブレーキ": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88_%E6%80%A5%E3%83%96%E3%83%AC%E3%83%BC%E3%82%AD/tiles.json"
+    },
+    "ドライブコンテスト_急加速": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88_%E6%80%A5%E5%8A%A0%E9%80%9F/tiles.json"
+    },
+    "ドライブコンテスト_速度超過": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E3%83%89%E3%83%A9%E3%82%A4%E3%83%96%E3%82%B3%E3%83%B3%E3%83%86%E3%82%B9%E3%83%88_%E9%80%9F%E5%BA%A6%E8%B6%85%E9%81%8E/tiles.json"
+    },
     "リサイクル拠点": {
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E3%83%AA%E3%82%B5%E3%82%A4%E3%82%AF%E3%83%AB%E6%8B%A0%E7%82%B9/tiles.json"
@@ -731,6 +775,10 @@
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E5%9F%8B%E8%94%B5%E6%96%87%E5%8C%96%E8%B2%A1/tiles.json"
     },
+    "ベジチェック設置場所": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E3%83%99%E3%82%B8%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E8%A8%AD%E7%BD%AE%E5%A0%B4%E6%89%80/tiles.json"
+    },
     "まちなか涼みどころ": {
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E3%81%BE%E3%81%A1%E3%81%AA%E3%81%8B%E6%B6%BC%E3%81%BF%E3%81%A9%E3%81%93%E3%82%8D/tiles.json"
@@ -750,6 +798,26 @@
     "公衆無線LAN一覧": {
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E5%85%AC%E8%A1%86%E7%84%A1%E7%B7%9ALAN%E4%B8%80%E8%A6%A7/tiles.json"
+    },
+    "魚フェス周辺スポット_有料駐車場": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E9%AD%9A%E3%83%95%E3%82%A7%E3%82%B9%E5%91%A8%E8%BE%BA%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88_%E6%9C%89%E6%96%99%E9%A7%90%E8%BB%8A%E5%A0%B4/tiles.json"
+    },
+    "魚フェス周辺スポット_史跡": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E9%AD%9A%E3%83%95%E3%82%A7%E3%82%B9%E5%91%A8%E8%BE%BA%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88_%E5%8F%B2%E8%B7%A1/tiles.json"
+    },
+    "魚フェス周辺スポット_休憩場所": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E9%AD%9A%E3%83%95%E3%82%A7%E3%82%B9%E5%91%A8%E8%BE%BA%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88_%E4%BC%91%E6%86%A9%E5%A0%B4%E6%89%80/tiles.json"
+    },
+    "魚フェス周辺スポット_自動販売機": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E9%AD%9A%E3%83%95%E3%82%A7%E3%82%B9%E5%91%A8%E8%BE%BA%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88_%E8%87%AA%E5%8B%95%E8%B2%A9%E5%A3%B2%E6%A9%9F/tiles.json"
+    },
+    "魚フェス周辺スポット_その他": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E9%AD%9A%E3%83%95%E3%82%A7%E3%82%B9%E5%91%A8%E8%BE%BA%E3%82%B9%E3%83%9D%E3%83%83%E3%83%88_%E3%81%9D%E3%81%AE%E4%BB%96/tiles.json"
     },
     "まちづくり_undefined_航空写真（令和5年度）": {
       "type": "raster",
@@ -1103,6 +1171,13 @@
       }
     },
     "WeatherAlert": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "EarthquakeAndTsunamiAlert": {
       "type": "geojson",
       "data": {
         "type": "FeatureCollection",
@@ -30770,6 +30845,51 @@
       }
     },
     {
+      "id": "防災/防災施設/災害時協力井戸-Polygon",
+      "type": "fill",
+      "source": "災害時協力井戸",
+      "source-layer": "災害時協力井戸",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/防災施設/災害時協力井戸"
+      }
+    },
+    {
       "id": "防災/防災施設/防災倉庫-Polygon",
       "type": "fill",
       "source": "防災倉庫一覧",
@@ -33106,7 +33226,232 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/お食事"
+        "menuId": "焼津駅前を歩こう！/お食事"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/ミナミマグロ-Polygon",
+      "type": "fill",
+      "source": "焼津海の幸グルメマップ_ミナミマグロ",
+      "source-layer": "焼津海の幸グルメマップ_ミナミマグロ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/ミナミマグロ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/カツオ-Polygon",
+      "type": "fill",
+      "source": "焼津海の幸グルメマップ_カツオ",
+      "source-layer": "焼津海の幸グルメマップ_カツオ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/カツオ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/サバ-Polygon",
+      "type": "fill",
+      "source": "焼津海の幸グルメマップ_サバ",
+      "source-layer": "焼津海の幸グルメマップ_サバ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/サバ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/サクラエビ-Polygon",
+      "type": "fill",
+      "source": "焼津海の幸グルメマップ_サクラエビ",
+      "source-layer": "焼津海の幸グルメマップ_サクラエビ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/サクラエビ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/シラス-Polygon",
+      "type": "fill",
+      "source": "焼津海の幸グルメマップ_シラス",
+      "source-layer": "焼津海の幸グルメマップ_シラス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/シラス"
       }
     },
     {
@@ -33151,7 +33496,7 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/お買い物/ショップ"
+        "menuId": "焼津駅前を歩こう！/お買い物"
       }
     },
     {
@@ -33286,7 +33631,7 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/日帰り温泉・足湯"
+        "menuId": "焼津駅前を歩こう！/日帰り温泉・足湯"
       }
     },
     {
@@ -35015,7 +35360,18 @@
         "visibility": "none"
       },
       "paint": {
-        "fill-pattern": "敷地面積の最低限度指定区域",
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#E52187"
+        ],
         "fill-opacity": [
           "case",
           [
@@ -36201,6 +36557,231 @@
       },
       "metadata": {
         "menuId": "交通/交通事故分析情報/2019年"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/スマホ使用-Polygon",
+      "type": "fill",
+      "source": "ドライブコンテスト_スマホ使用",
+      "source-layer": "ドライブコンテスト_スマホ使用",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/スマホ使用"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ハンドル-Polygon",
+      "type": "fill",
+      "source": "ドライブコンテスト_急ハンドル",
+      "source-layer": "ドライブコンテスト_急ハンドル",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ハンドル"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ブレーキ-Polygon",
+      "type": "fill",
+      "source": "ドライブコンテスト_急ブレーキ",
+      "source-layer": "ドライブコンテスト_急ブレーキ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ブレーキ"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急加速-Polygon",
+      "type": "fill",
+      "source": "ドライブコンテスト_急加速",
+      "source-layer": "ドライブコンテスト_急加速",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急加速"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/速度超過-Polygon",
+      "type": "fill",
+      "source": "ドライブコンテスト_速度超過",
+      "source-layer": "ドライブコンテスト_速度超過",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/速度超過"
       }
     },
     {
@@ -37779,6 +38360,51 @@
       }
     },
     {
+      "id": "健康・福祉/ベジチェック設置場所-Polygon",
+      "type": "fill",
+      "source": "ベジチェック設置場所",
+      "source-layer": "ベジチェック設置場所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "健康・福祉/ベジチェック設置場所"
+      }
+    },
+    {
       "id": "健康・福祉/まちなか涼みどころ-Polygon",
       "type": "fill",
       "source": "まちなか涼みどころ",
@@ -38004,6 +38630,366 @@
       }
     },
     {
+      "id": "焼津駅前を歩こう！/有料駐車場（焼津駅周辺）-Polygon",
+      "type": "fill",
+      "source": "魚フェス周辺スポット_有料駐車場",
+      "source-layer": "魚フェス周辺スポット_有料駐車場",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/有料駐車場（焼津駅周辺）"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/日帰り温泉・足湯-Polygon",
+      "type": "fill",
+      "source": "日帰り温泉・足湯",
+      "source-layer": "日帰り温泉・足湯",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/日帰り温泉・足湯"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/歴史・史跡-Polygon",
+      "type": "fill",
+      "source": "魚フェス周辺スポット_史跡",
+      "source-layer": "魚フェス周辺スポット_史跡",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/歴史・史跡"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/お食事-Polygon",
+      "type": "fill",
+      "source": "お食事",
+      "source-layer": "お食事",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/お食事"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/お買い物-Polygon",
+      "type": "fill",
+      "source": "ショップ",
+      "source-layer": "ショップ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/お買い物"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/休憩場所（ベンチ）-Polygon",
+      "type": "fill",
+      "source": "魚フェス周辺スポット_休憩場所",
+      "source-layer": "魚フェス周辺スポット_休憩場所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/休憩場所（ベンチ）"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/自動販売機-Polygon",
+      "type": "fill",
+      "source": "魚フェス周辺スポット_自動販売機",
+      "source-layer": "魚フェス周辺スポット_自動販売機",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/自動販売機"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/その他-Polygon",
+      "type": "fill",
+      "source": "魚フェス周辺スポット_その他",
+      "source-layer": "魚フェス周辺スポット_その他",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/その他"
+      }
+    },
+    {
       "id": "リアルタイム防災情報/発令中の避難情報/土砂災害-Polygon-outline",
       "type": "line",
       "source": "yaizu-alert-area",
@@ -38044,7 +39030,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -38163,7 +39149,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -38282,7 +39268,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -38401,7 +39387,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -38520,7 +39506,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -38639,7 +39625,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -38754,7 +39740,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -38865,7 +39851,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -38976,7 +39962,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -39087,7 +40073,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -39198,7 +40184,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -39309,7 +40295,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -39420,7 +40406,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -39532,7 +40518,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -39651,7 +40637,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -39770,7 +40756,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -39889,7 +40875,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -40008,7 +40994,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -40090,6 +41076,125 @@
       }
     },
     {
+      "id": "防災/防災施設/災害時協力井戸-Polygon-outline",
+      "type": "line",
+      "source": "災害時協力井戸",
+      "source-layer": "災害時協力井戸",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/防災施設/災害時協力井戸"
+      }
+    },
+    {
+      "id": "防災/防災施設/災害時協力井戸-LineString",
+      "type": "line",
+      "source": "災害時協力井戸",
+      "source-layer": "災害時協力井戸",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/防災施設/災害時協力井戸"
+      }
+    },
+    {
       "id": "防災/防災施設/防災倉庫-Polygon-outline",
       "type": "line",
       "source": "防災倉庫一覧",
@@ -40127,7 +41232,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -40246,7 +41351,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -40365,7 +41470,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -40484,7 +41589,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -40603,7 +41708,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -40722,7 +41827,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -40841,7 +41946,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -40960,7 +42065,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -41079,7 +42184,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -41198,7 +42303,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -41317,7 +42422,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -41436,7 +42541,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -41555,7 +42660,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -41674,7 +42779,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -41793,7 +42898,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -41912,7 +43017,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -42031,7 +43136,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -42150,7 +43255,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -42269,7 +43374,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -42388,7 +43493,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -42507,7 +43612,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -42626,7 +43731,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -42745,7 +43850,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -42864,7 +43969,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -42983,7 +44088,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -43102,7 +44207,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -43221,7 +44326,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -43340,7 +44445,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -43459,7 +44564,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -43578,7 +44683,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -43697,7 +44802,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -43816,7 +44921,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -43935,7 +45040,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -44054,7 +45159,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -44173,7 +45278,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -44292,7 +45397,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -44411,7 +45516,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -44530,7 +45635,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -44649,7 +45754,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -44768,7 +45873,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -44887,7 +45992,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -45006,7 +46111,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -45125,7 +46230,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -45244,7 +46349,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -45363,7 +46468,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -45482,7 +46587,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -45601,7 +46706,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -45720,7 +46825,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -45839,7 +46944,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -45958,7 +47063,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -46077,7 +47182,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -46196,7 +47301,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -46212,7 +47317,7 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/お食事"
+        "menuId": "焼津駅前を歩こう！/お食事"
       }
     },
     {
@@ -46274,7 +47379,602 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/お食事"
+        "menuId": "焼津駅前を歩こう！/お食事"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/ミナミマグロ-Polygon-outline",
+      "type": "line",
+      "source": "焼津海の幸グルメマップ_ミナミマグロ",
+      "source-layer": "焼津海の幸グルメマップ_ミナミマグロ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/ミナミマグロ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/ミナミマグロ-LineString",
+      "type": "line",
+      "source": "焼津海の幸グルメマップ_ミナミマグロ",
+      "source-layer": "焼津海の幸グルメマップ_ミナミマグロ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/ミナミマグロ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/カツオ-Polygon-outline",
+      "type": "line",
+      "source": "焼津海の幸グルメマップ_カツオ",
+      "source-layer": "焼津海の幸グルメマップ_カツオ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/カツオ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/カツオ-LineString",
+      "type": "line",
+      "source": "焼津海の幸グルメマップ_カツオ",
+      "source-layer": "焼津海の幸グルメマップ_カツオ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/カツオ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/サバ-Polygon-outline",
+      "type": "line",
+      "source": "焼津海の幸グルメマップ_サバ",
+      "source-layer": "焼津海の幸グルメマップ_サバ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/サバ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/サバ-LineString",
+      "type": "line",
+      "source": "焼津海の幸グルメマップ_サバ",
+      "source-layer": "焼津海の幸グルメマップ_サバ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/サバ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/サクラエビ-Polygon-outline",
+      "type": "line",
+      "source": "焼津海の幸グルメマップ_サクラエビ",
+      "source-layer": "焼津海の幸グルメマップ_サクラエビ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/サクラエビ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/サクラエビ-LineString",
+      "type": "line",
+      "source": "焼津海の幸グルメマップ_サクラエビ",
+      "source-layer": "焼津海の幸グルメマップ_サクラエビ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/サクラエビ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/シラス-Polygon-outline",
+      "type": "line",
+      "source": "焼津海の幸グルメマップ_シラス",
+      "source-layer": "焼津海の幸グルメマップ_シラス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/シラス"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/シラス-LineString",
+      "type": "line",
+      "source": "焼津海の幸グルメマップ_シラス",
+      "source-layer": "焼津海の幸グルメマップ_シラス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/シラス"
       }
     },
     {
@@ -46315,7 +48015,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -46331,7 +48031,7 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/お買い物/ショップ"
+        "menuId": "焼津駅前を歩こう！/お買い物"
       }
     },
     {
@@ -46393,7 +48093,7 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/お買い物/ショップ"
+        "menuId": "焼津駅前を歩こう！/お買い物"
       }
     },
     {
@@ -46434,7 +48134,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -46553,7 +48253,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -46672,7 +48372,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -46688,7 +48388,7 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/日帰り温泉・足湯"
+        "menuId": "焼津駅前を歩こう！/日帰り温泉・足湯"
       }
     },
     {
@@ -46750,7 +48450,7 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/日帰り温泉・足湯"
+        "menuId": "焼津駅前を歩こう！/日帰り温泉・足湯"
       }
     },
     {
@@ -46791,7 +48491,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -46910,7 +48610,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -47029,7 +48729,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -47148,7 +48848,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -47267,7 +48967,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -47386,7 +49086,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -47505,7 +49205,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -47624,7 +49324,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -47743,7 +49443,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -47862,7 +49562,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -47981,7 +49681,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -48100,7 +49800,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -48219,7 +49919,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -48338,7 +50038,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -48457,7 +50157,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -48576,7 +50276,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -48695,7 +50395,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -48814,7 +50514,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -48933,7 +50633,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -49052,7 +50752,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -49171,7 +50871,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -49290,7 +50990,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -49409,7 +51109,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -49528,7 +51228,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -49647,7 +51347,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -49766,7 +51466,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -49885,7 +51585,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -50004,7 +51704,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -50123,7 +51823,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -50242,7 +51942,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -50361,7 +52061,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -50480,7 +52180,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -50599,7 +52299,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -50718,7 +52418,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -50837,7 +52537,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -50956,7 +52656,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -51075,7 +52775,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -51194,7 +52894,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -51313,7 +53013,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -51432,7 +53132,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -51551,7 +53251,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -51670,7 +53370,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -51789,7 +53489,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -51908,7 +53608,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -52027,7 +53727,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -52146,7 +53846,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -52265,7 +53965,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -52384,7 +54084,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -52503,7 +54203,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -52622,7 +54322,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -52741,7 +54441,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -52860,7 +54560,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -52979,7 +54679,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -53098,7 +54798,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -53217,7 +54917,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -53336,7 +55036,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -53455,7 +55155,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -53574,7 +55274,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -53693,7 +55393,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -53812,7 +55512,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -53931,7 +55631,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -54050,7 +55750,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -54169,7 +55869,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -54288,7 +55988,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -54407,7 +56107,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -54489,6 +56189,601 @@
       }
     },
     {
+      "id": "交通/ドライブコンテスト/スマホ使用-Polygon-outline",
+      "type": "line",
+      "source": "ドライブコンテスト_スマホ使用",
+      "source-layer": "ドライブコンテスト_スマホ使用",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/スマホ使用"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/スマホ使用-LineString",
+      "type": "line",
+      "source": "ドライブコンテスト_スマホ使用",
+      "source-layer": "ドライブコンテスト_スマホ使用",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/スマホ使用"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ハンドル-Polygon-outline",
+      "type": "line",
+      "source": "ドライブコンテスト_急ハンドル",
+      "source-layer": "ドライブコンテスト_急ハンドル",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ハンドル"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ハンドル-LineString",
+      "type": "line",
+      "source": "ドライブコンテスト_急ハンドル",
+      "source-layer": "ドライブコンテスト_急ハンドル",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ハンドル"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ブレーキ-Polygon-outline",
+      "type": "line",
+      "source": "ドライブコンテスト_急ブレーキ",
+      "source-layer": "ドライブコンテスト_急ブレーキ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ブレーキ"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ブレーキ-LineString",
+      "type": "line",
+      "source": "ドライブコンテスト_急ブレーキ",
+      "source-layer": "ドライブコンテスト_急ブレーキ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ブレーキ"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急加速-Polygon-outline",
+      "type": "line",
+      "source": "ドライブコンテスト_急加速",
+      "source-layer": "ドライブコンテスト_急加速",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急加速"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急加速-LineString",
+      "type": "line",
+      "source": "ドライブコンテスト_急加速",
+      "source-layer": "ドライブコンテスト_急加速",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急加速"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/速度超過-Polygon-outline",
+      "type": "line",
+      "source": "ドライブコンテスト_速度超過",
+      "source-layer": "ドライブコンテスト_速度超過",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/速度超過"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/速度超過-LineString",
+      "type": "line",
+      "source": "ドライブコンテスト_速度超過",
+      "source-layer": "ドライブコンテスト_速度超過",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/速度超過"
+      }
+    },
+    {
       "id": "ごみ・リサイクル/リサイクル拠点-Polygon-outline",
       "type": "line",
       "source": "リサイクル拠点",
@@ -54526,7 +56821,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -54645,7 +56940,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -54764,7 +57059,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -54883,7 +57178,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -55002,7 +57297,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -55121,7 +57416,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -55240,7 +57535,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -55359,7 +57654,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -55478,7 +57773,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -55597,7 +57892,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -55716,7 +58011,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -55835,7 +58130,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -55954,7 +58249,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -56073,7 +58368,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -56192,7 +58487,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -56311,7 +58606,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -56430,7 +58725,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -56549,7 +58844,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -56668,7 +58963,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -56787,7 +59082,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -56906,7 +59201,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -57025,7 +59320,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -57144,7 +59439,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -57263,7 +59558,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -57382,7 +59677,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -57501,7 +59796,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -57620,7 +59915,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -57739,7 +60034,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -57858,7 +60153,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -57977,7 +60272,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -58096,7 +60391,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -58215,7 +60510,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -58334,7 +60629,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -58453,7 +60748,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -58572,7 +60867,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -58654,6 +60949,125 @@
       }
     },
     {
+      "id": "健康・福祉/ベジチェック設置場所-Polygon-outline",
+      "type": "line",
+      "source": "ベジチェック設置場所",
+      "source-layer": "ベジチェック設置場所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "健康・福祉/ベジチェック設置場所"
+      }
+    },
+    {
+      "id": "健康・福祉/ベジチェック設置場所-LineString",
+      "type": "line",
+      "source": "ベジチェック設置場所",
+      "source-layer": "ベジチェック設置場所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "健康・福祉/ベジチェック設置場所"
+      }
+    },
+    {
       "id": "健康・福祉/まちなか涼みどころ-Polygon-outline",
       "type": "line",
       "source": "まちなか涼みどころ",
@@ -58691,7 +61105,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -58810,7 +61224,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -58929,7 +61343,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -59048,7 +61462,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -59167,7 +61581,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "line-opacity": [
           "case",
@@ -59246,6 +61660,958 @@
       },
       "metadata": {
         "menuId": "市の窓口/Free Wi-Fiスポット"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/有料駐車場（焼津駅周辺）-Polygon-outline",
+      "type": "line",
+      "source": "魚フェス周辺スポット_有料駐車場",
+      "source-layer": "魚フェス周辺スポット_有料駐車場",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/有料駐車場（焼津駅周辺）"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/有料駐車場（焼津駅周辺）-LineString",
+      "type": "line",
+      "source": "魚フェス周辺スポット_有料駐車場",
+      "source-layer": "魚フェス周辺スポット_有料駐車場",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/有料駐車場（焼津駅周辺）"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/日帰り温泉・足湯-Polygon-outline",
+      "type": "line",
+      "source": "日帰り温泉・足湯",
+      "source-layer": "日帰り温泉・足湯",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/日帰り温泉・足湯"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/日帰り温泉・足湯-LineString",
+      "type": "line",
+      "source": "日帰り温泉・足湯",
+      "source-layer": "日帰り温泉・足湯",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/日帰り温泉・足湯"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/歴史・史跡-Polygon-outline",
+      "type": "line",
+      "source": "魚フェス周辺スポット_史跡",
+      "source-layer": "魚フェス周辺スポット_史跡",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/歴史・史跡"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/歴史・史跡-LineString",
+      "type": "line",
+      "source": "魚フェス周辺スポット_史跡",
+      "source-layer": "魚フェス周辺スポット_史跡",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/歴史・史跡"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/お食事-Polygon-outline",
+      "type": "line",
+      "source": "お食事",
+      "source-layer": "お食事",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/お食事"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/お食事-LineString",
+      "type": "line",
+      "source": "お食事",
+      "source-layer": "お食事",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/お食事"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/お買い物-Polygon-outline",
+      "type": "line",
+      "source": "ショップ",
+      "source-layer": "ショップ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/お買い物"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/お買い物-LineString",
+      "type": "line",
+      "source": "ショップ",
+      "source-layer": "ショップ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/お買い物"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/休憩場所（ベンチ）-Polygon-outline",
+      "type": "line",
+      "source": "魚フェス周辺スポット_休憩場所",
+      "source-layer": "魚フェス周辺スポット_休憩場所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/休憩場所（ベンチ）"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/休憩場所（ベンチ）-LineString",
+      "type": "line",
+      "source": "魚フェス周辺スポット_休憩場所",
+      "source-layer": "魚フェス周辺スポット_休憩場所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/休憩場所（ベンチ）"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/自動販売機-Polygon-outline",
+      "type": "line",
+      "source": "魚フェス周辺スポット_自動販売機",
+      "source-layer": "魚フェス周辺スポット_自動販売機",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/自動販売機"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/自動販売機-LineString",
+      "type": "line",
+      "source": "魚フェス周辺スポット_自動販売機",
+      "source-layer": "魚フェス周辺スポット_自動販売機",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/自動販売機"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/その他-Polygon-outline",
+      "type": "line",
+      "source": "魚フェス周辺スポット_その他",
+      "source-layer": "魚フェス周辺スポット_その他",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/その他"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/その他-LineString",
+      "type": "line",
+      "source": "魚フェス周辺スポット_その他",
+      "source-layer": "魚フェス周辺スポット_その他",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/その他"
       }
     },
     {
@@ -60220,6 +63586,58 @@
       },
       "metadata": {
         "menuId": "防災/防災施設/防火水そう・井戸"
+      }
+    },
+    {
+      "id": "防災/防災施設/災害時協力井戸-Label",
+      "type": "symbol",
+      "source": "災害時協力井戸",
+      "source-layer": "災害時協力井戸",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/防災施設/災害時協力井戸"
       }
     },
     {
@@ -62923,7 +66341,267 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/お食事"
+        "menuId": "焼津駅前を歩こう！/お食事"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/ミナミマグロ-Label",
+      "type": "symbol",
+      "source": "焼津海の幸グルメマップ_ミナミマグロ",
+      "source-layer": "焼津海の幸グルメマップ_ミナミマグロ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/ミナミマグロ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/カツオ-Label",
+      "type": "symbol",
+      "source": "焼津海の幸グルメマップ_カツオ",
+      "source-layer": "焼津海の幸グルメマップ_カツオ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/カツオ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/サバ-Label",
+      "type": "symbol",
+      "source": "焼津海の幸グルメマップ_サバ",
+      "source-layer": "焼津海の幸グルメマップ_サバ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/サバ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/サクラエビ-Label",
+      "type": "symbol",
+      "source": "焼津海の幸グルメマップ_サクラエビ",
+      "source-layer": "焼津海の幸グルメマップ_サクラエビ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/サクラエビ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/シラス-Label",
+      "type": "symbol",
+      "source": "焼津海の幸グルメマップ_シラス",
+      "source-layer": "焼津海の幸グルメマップ_シラス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/シラス"
       }
     },
     {
@@ -62975,7 +66653,7 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/お買い物/ショップ"
+        "menuId": "焼津駅前を歩こう！/お買い物"
       }
     },
     {
@@ -63131,7 +66809,7 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/日帰り温泉・足湯"
+        "menuId": "焼津駅前を歩こう！/日帰り温泉・足湯"
       }
     },
     {
@@ -66515,6 +70193,266 @@
       }
     },
     {
+      "id": "交通/ドライブコンテスト/スマホ使用-Label",
+      "type": "symbol",
+      "source": "ドライブコンテスト_スマホ使用",
+      "source-layer": "ドライブコンテスト_スマホ使用",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/スマホ使用"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ハンドル-Label",
+      "type": "symbol",
+      "source": "ドライブコンテスト_急ハンドル",
+      "source-layer": "ドライブコンテスト_急ハンドル",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ハンドル"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ブレーキ-Label",
+      "type": "symbol",
+      "source": "ドライブコンテスト_急ブレーキ",
+      "source-layer": "ドライブコンテスト_急ブレーキ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ブレーキ"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急加速-Label",
+      "type": "symbol",
+      "source": "ドライブコンテスト_急加速",
+      "source-layer": "ドライブコンテスト_急加速",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急加速"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/速度超過-Label",
+      "type": "symbol",
+      "source": "ドライブコンテスト_速度超過",
+      "source-layer": "ドライブコンテスト_速度超過",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/速度超過"
+      }
+    },
+    {
       "id": "ごみ・リサイクル/リサイクル拠点-Label",
       "type": "symbol",
       "source": "リサイクル拠点",
@@ -68335,6 +72273,58 @@
       }
     },
     {
+      "id": "健康・福祉/ベジチェック設置場所-Label",
+      "type": "symbol",
+      "source": "ベジチェック設置場所",
+      "source-layer": "ベジチェック設置場所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "健康・福祉/ベジチェック設置場所"
+      }
+    },
+    {
       "id": "健康・福祉/まちなか涼みどころ-Label",
       "type": "symbol",
       "source": "まちなか涼みどころ",
@@ -68595,6 +72585,422 @@
       }
     },
     {
+      "id": "焼津駅前を歩こう！/有料駐車場（焼津駅周辺）-Label",
+      "type": "symbol",
+      "source": "魚フェス周辺スポット_有料駐車場",
+      "source-layer": "魚フェス周辺スポット_有料駐車場",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/有料駐車場（焼津駅周辺）"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/日帰り温泉・足湯-Label",
+      "type": "symbol",
+      "source": "日帰り温泉・足湯",
+      "source-layer": "日帰り温泉・足湯",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/日帰り温泉・足湯"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/歴史・史跡-Label",
+      "type": "symbol",
+      "source": "魚フェス周辺スポット_史跡",
+      "source-layer": "魚フェス周辺スポット_史跡",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/歴史・史跡"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/お食事-Label",
+      "type": "symbol",
+      "source": "お食事",
+      "source-layer": "お食事",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/お食事"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/お買い物-Label",
+      "type": "symbol",
+      "source": "ショップ",
+      "source-layer": "ショップ",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/お買い物"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/休憩場所（ベンチ）-Label",
+      "type": "symbol",
+      "source": "魚フェス周辺スポット_休憩場所",
+      "source-layer": "魚フェス周辺スポット_休憩場所",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/休憩場所（ベンチ）"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/自動販売機-Label",
+      "type": "symbol",
+      "source": "魚フェス周辺スポット_自動販売機",
+      "source-layer": "魚フェス周辺スポット_自動販売機",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/自動販売機"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/その他-Label",
+      "type": "symbol",
+      "source": "魚フェス周辺スポット_その他",
+      "source-layer": "魚フェス周辺スポット_その他",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/その他"
+      }
+    },
+    {
       "id": "リアルタイム防災情報/発令中の避難情報/土砂災害-Point",
       "type": "circle",
       "source": "yaizu-alert-area",
@@ -68693,7 +73099,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -68910,7 +73316,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -69127,7 +73533,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -69344,7 +73750,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -69561,7 +73967,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -69778,7 +74184,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -69980,7 +74386,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -70167,7 +74573,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -70354,7 +74760,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -70541,7 +74947,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -70728,7 +75134,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -70915,7 +75321,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -71102,7 +75508,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -71290,7 +75696,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -71561,7 +75967,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -71821,6 +76227,201 @@
       },
       "metadata": {
         "menuId": "防災/防災施設/防火水そう・井戸"
+      }
+    },
+    {
+      "id": "防災/防災施設/災害時協力井戸-Point",
+      "type": "circle",
+      "source": "災害時協力井戸",
+      "source-layer": "災害時協力井戸",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "\t#1E90FF"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/防災施設/災害時協力井戸"
+      }
+    },
+    {
+      "id": "防災/防災施設/災害時協力井戸-Symbol",
+      "type": "symbol",
+      "source": "災害時協力井戸",
+      "source-layer": "災害時協力井戸",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "\t#1E90FF"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/防災施設/災害時協力井戸"
       }
     },
     {
@@ -72516,7 +77117,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -72711,7 +77312,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -72906,7 +77507,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -73253,7 +77854,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -73448,7 +78049,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -73643,7 +78244,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -73838,7 +78439,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -74033,7 +78634,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -74228,7 +78829,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -74423,7 +79024,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -74618,7 +79219,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -74813,7 +79414,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -75008,7 +79609,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -75203,7 +79804,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -75398,7 +79999,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -75593,7 +80194,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -75788,7 +80389,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -75983,7 +80584,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -76178,7 +80779,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -76373,7 +80974,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -76568,7 +81169,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -76763,7 +81364,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -76958,7 +81559,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -77153,7 +81754,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -77348,7 +81949,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -77543,7 +82144,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -77738,7 +82339,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -77933,7 +82534,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -78128,7 +82729,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -78323,7 +82924,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -78518,7 +83119,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -78713,7 +83314,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -78908,7 +83509,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -79103,7 +83704,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -79298,7 +83899,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -79493,7 +84094,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -79688,7 +84289,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -79883,7 +84484,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -80078,7 +84679,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -80273,7 +84874,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -80426,7 +85027,7 @@
           "get",
           "_rotate"
         ],
-        "icon-image": "shopping",
+        "icon-image": "star",
         "visibility": "visible"
       },
       "paint": {
@@ -80532,7 +85133,387 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/お食事"
+        "menuId": "焼津駅前を歩こう！/お食事"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/ミナミマグロ-Symbol",
+      "type": "symbol",
+      "source": "焼津海の幸グルメマップ_ミナミマグロ",
+      "source-layer": "焼津海の幸グルメマップ_ミナミマグロ",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "fish",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/ミナミマグロ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/カツオ-Symbol",
+      "type": "symbol",
+      "source": "焼津海の幸グルメマップ_カツオ",
+      "source-layer": "焼津海の幸グルメマップ_カツオ",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "fish",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/カツオ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/サバ-Symbol",
+      "type": "symbol",
+      "source": "焼津海の幸グルメマップ_サバ",
+      "source-layer": "焼津海の幸グルメマップ_サバ",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "fish",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/サバ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/サクラエビ-Symbol",
+      "type": "symbol",
+      "source": "焼津海の幸グルメマップ_サクラエビ",
+      "source-layer": "焼津海の幸グルメマップ_サクラエビ",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "fish",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/サクラエビ"
+      }
+    },
+    {
+      "id": "観光・イベント/海の幸グルメマップ/シラス-Symbol",
+      "type": "symbol",
+      "source": "焼津海の幸グルメマップ_シラス",
+      "source-layer": "焼津海の幸グルメマップ_シラス",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "fish",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/海の幸グルメマップ/シラス"
       }
     },
     {
@@ -80608,7 +85589,7 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/お買い物/ショップ"
+        "menuId": "焼津駅前を歩こう！/お買い物"
       }
     },
     {
@@ -80836,7 +85817,7 @@
         ]
       },
       "metadata": {
-        "menuId": "観光・イベント/日帰り温泉・足湯"
+        "menuId": "焼津駅前を歩こう！/日帰り温泉・足湯"
       }
     },
     {
@@ -81076,7 +86057,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -81347,7 +86328,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -81542,7 +86523,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -81737,7 +86718,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -81932,7 +86913,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -82127,7 +87108,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -82322,7 +87303,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -82517,7 +87498,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -82712,7 +87693,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -83059,7 +88040,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -83254,7 +88235,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -83449,7 +88430,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -83644,7 +88625,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -83839,7 +88820,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -84034,7 +89015,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -84229,7 +89210,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -84424,7 +89405,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -84619,7 +89600,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -84814,7 +89795,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -85009,7 +89990,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -85204,7 +90185,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -85399,7 +90380,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -85594,7 +90575,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -85789,7 +90770,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -85984,7 +90965,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -86179,7 +91160,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -86374,7 +91355,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -86569,7 +91550,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -86764,7 +91745,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -86959,7 +91940,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -87154,7 +92135,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -87349,7 +92330,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -87544,7 +92525,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -87739,7 +92720,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -87934,7 +92915,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -88129,7 +93110,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -88476,7 +93457,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -88671,7 +93652,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -88866,7 +93847,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -89061,7 +94042,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -89256,7 +94237,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -89451,7 +94432,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -89646,7 +94627,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -89841,7 +94822,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -90036,7 +95017,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -90307,7 +95288,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -90578,7 +95559,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -91077,7 +96058,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -91272,7 +96253,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -91467,7 +96448,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -91662,7 +96643,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -91857,7 +96838,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -91968,6 +96949,981 @@
       }
     },
     {
+      "id": "交通/ドライブコンテスト/スマホ使用-Point",
+      "type": "circle",
+      "source": "ドライブコンテスト_スマホ使用",
+      "source-layer": "ドライブコンテスト_スマホ使用",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#A1A4FF"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/スマホ使用"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/スマホ使用-Symbol",
+      "type": "symbol",
+      "source": "ドライブコンテスト_スマホ使用",
+      "source-layer": "ドライブコンテスト_スマホ使用",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#A1A4FF"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/スマホ使用"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ハンドル-Point",
+      "type": "circle",
+      "source": "ドライブコンテスト_急ハンドル",
+      "source-layer": "ドライブコンテスト_急ハンドル",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#FF8DFF"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ハンドル"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ハンドル-Symbol",
+      "type": "symbol",
+      "source": "ドライブコンテスト_急ハンドル",
+      "source-layer": "ドライブコンテスト_急ハンドル",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#FF8DFF"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ハンドル"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ブレーキ-Point",
+      "type": "circle",
+      "source": "ドライブコンテスト_急ブレーキ",
+      "source-layer": "ドライブコンテスト_急ブレーキ",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#FF6565"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ブレーキ"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急ブレーキ-Symbol",
+      "type": "symbol",
+      "source": "ドライブコンテスト_急ブレーキ",
+      "source-layer": "ドライブコンテスト_急ブレーキ",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#FF6565"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急ブレーキ"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急加速-Point",
+      "type": "circle",
+      "source": "ドライブコンテスト_急加速",
+      "source-layer": "ドライブコンテスト_急加速",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#3F4886"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急加速"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/急加速-Symbol",
+      "type": "symbol",
+      "source": "ドライブコンテスト_急加速",
+      "source-layer": "ドライブコンテスト_急加速",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#3F4886"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/急加速"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/速度超過-Point",
+      "type": "circle",
+      "source": "ドライブコンテスト_速度超過",
+      "source-layer": "ドライブコンテスト_速度超過",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#3F994C"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/速度超過"
+      }
+    },
+    {
+      "id": "交通/ドライブコンテスト/速度超過-Symbol",
+      "type": "symbol",
+      "source": "ドライブコンテスト_速度超過",
+      "source-layer": "ドライブコンテスト_速度超過",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#3F994C"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/ドライブコンテスト/速度超過"
+      }
+    },
+    {
       "id": "ごみ・リサイクル/リサイクル拠点-Point",
       "type": "circle",
       "source": "リサイクル拠点",
@@ -92052,7 +98008,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -92247,7 +98203,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -92442,7 +98398,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -92637,7 +98593,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -92832,7 +98788,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -93027,7 +98983,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -93374,7 +99330,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -93645,7 +99601,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -93840,7 +99796,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -94035,7 +99991,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -94230,7 +100186,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -94425,7 +100381,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -94620,7 +100576,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -94815,7 +100771,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -95010,7 +100966,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -95205,7 +101161,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -95400,7 +101356,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -95595,7 +101551,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -95790,7 +101746,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -95985,7 +101941,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -96180,7 +102136,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -96375,7 +102331,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -96570,7 +102526,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -96765,7 +102721,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -97112,7 +103068,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -97611,7 +103567,7 @@
             "get",
             "stroke-width"
           ],
-          2
+          1
         ],
         "circle-stroke-color": [
           "case",
@@ -97719,6 +103675,82 @@
       },
       "metadata": {
         "menuId": "文化・スポーツ/埋蔵文化財"
+      }
+    },
+    {
+      "id": "健康・福祉/ベジチェック設置場所-Symbol",
+      "type": "symbol",
+      "source": "ベジチェック設置場所",
+      "source-layer": "ベジチェック設置場所",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "agricultural-experience-facility",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "健康・福祉/ベジチェック設置場所"
       }
     },
     {
@@ -98099,6 +104131,614 @@
       },
       "metadata": {
         "menuId": "市の窓口/Free Wi-Fiスポット"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/有料駐車場（焼津駅周辺）-Symbol",
+      "type": "symbol",
+      "source": "魚フェス周辺スポット_有料駐車場",
+      "source-layer": "魚フェス周辺スポット_有料駐車場",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "parking",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/有料駐車場（焼津駅周辺）"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/日帰り温泉・足湯-Symbol",
+      "type": "symbol",
+      "source": "日帰り温泉・足湯",
+      "source-layer": "日帰り温泉・足湯",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "hotspring",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/日帰り温泉・足湯"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/歴史・史跡-Symbol",
+      "type": "symbol",
+      "source": "魚フェス周辺スポット_史跡",
+      "source-layer": "魚フェス周辺スポット_史跡",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "historical-folk-facilities",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/歴史・史跡"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/お食事-Symbol",
+      "type": "symbol",
+      "source": "お食事",
+      "source-layer": "お食事",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "restaurant",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/お食事"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/お買い物-Symbol",
+      "type": "symbol",
+      "source": "ショップ",
+      "source-layer": "ショップ",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "shopping",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/お買い物"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/休憩場所（ベンチ）-Symbol",
+      "type": "symbol",
+      "source": "魚フェス周辺スポット_休憩場所",
+      "source-layer": "魚フェス周辺スポット_休憩場所",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "brown-marker",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/休憩場所（ベンチ）"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/自動販売機-Symbol",
+      "type": "symbol",
+      "source": "魚フェス周辺スポット_自動販売機",
+      "source-layer": "魚フェス周辺スポット_自動販売機",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "vending-machine",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/自動販売機"
+      }
+    },
+    {
+      "id": "焼津駅前を歩こう！/便利なスポット/その他-Symbol",
+      "type": "symbol",
+      "source": "魚フェス周辺スポット_その他",
+      "source-layer": "魚フェス周辺スポット_その他",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "marker-ultramarine",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "焼津駅前を歩こう！/便利なスポット/その他"
       }
     },
     {
