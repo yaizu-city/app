@@ -4,8 +4,8 @@
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/saigai.txt"
     },
     {
-      "name": "デジタルクーポン祭",
-      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/digitalcoupon.txt"
+      "name": "小泉八雲ゆかりの地",
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/yakumo.txt"
     },
     {
       "name": "野菜摂取量を測ろう",
