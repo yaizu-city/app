@@ -7,7 +7,7 @@
       "name": "小泉八雲ゆかりの地",
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/yakumo.txt"
     },
-　　{
+    {
       "name": "さくら並木",
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/sakuranamiki.txt"
     },
