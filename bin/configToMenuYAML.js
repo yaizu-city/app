@@ -429,6 +429,12 @@ const configToMenuYAML = async (config, outputFile) => {
       if (大カテゴリー && メニュータイトル) {
 
         if (menu[大カテゴリー].items[メニュータイトル]) {
+          // 同名の中カテゴリーが既に存在する場合、そのカテゴリー内にデータを追加する
+          if (menu[大カテゴリー].items[メニュータイトル].type === 'category') {
+            const data = await createData(`${大カテゴリー}/${メニュータイトル}/${メニュータイトル}`, item);
+            menu[大カテゴリー].items[メニュータイトル].items[メニュータイトル] = data;
+            continue;
+          }
           throw new Error(`メニュータイトル: ${大カテゴリー}/${メニュータイトル} は重複しています`);
         }
 
