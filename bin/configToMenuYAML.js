@@ -45,6 +45,14 @@ const yaizuDataPNG = [
   {
     urlKey: 'flood-duration',
     legendType: '浸水継続時間'
+  },
+  {
+    urlKey: 'takashio-shinsuishin',
+    legendType: '浸水深'
+  },
+  {
+    urlKey: 'takashio-keizoku',
+    legendType: '浸水継続時間'
   }
 ]
 
@@ -91,7 +99,7 @@ const getAxiosHeaders = (url) => {
 const getTileIdFromTilesJson = async (item) => {
 
   const url = item.データ参照先;
-  const id = `${item.大カテゴリー}_${item.中カテゴリー}_${item.メニュータイトル}`;
+  const id = [item.大カテゴリー, item.中カテゴリー, item.メニュータイトル].filter(Boolean).join('_');
 
   if (url.includes('tiles.json')) {
     const res = await axios.get(url, getAxiosHeaders(url));
@@ -104,7 +112,7 @@ const getTileIdFromTilesJson = async (item) => {
 const determineDataType = (dataRefUrl) => {
   if (dataRefUrl.includes('{z}/{x}/{y}.png')) {
     // yaizu-smartmap-shindobunpu / yaizu-smartmap-ekijyouka / yaizu-smartmap-4th-tsunami-shinsui / _flood-max / _flood-duration が含まれている場合は datapng
-    if (dataRefUrl.includes('yaizu-smartmap-shindobunpu') || dataRefUrl.includes('yaizu-smartmap-ekijyouka') || dataRefUrl.includes('yaizu-smartmap-4th-tsunami-shinsui') || dataRefUrl.includes('_flood-max') || dataRefUrl.includes('_flood-duration') || dataRefUrl.includes('_flood-planned')) {
+    if (dataRefUrl.includes('yaizu-smartmap-shindobunpu') || dataRefUrl.includes('yaizu-smartmap-ekijyouka') || dataRefUrl.includes('yaizu-smartmap-4th-tsunami-shinsui') || dataRefUrl.includes('_flood-max') || dataRefUrl.includes('_flood-duration') || dataRefUrl.includes('_flood-planned') || dataRefUrl.includes('takashio-shinsuishin') || dataRefUrl.includes('takashio-keizoku')) {
       return 'datapng';
     } else {
       return 'raster';
