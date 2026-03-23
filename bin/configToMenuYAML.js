@@ -99,7 +99,7 @@ const getAxiosHeaders = (url) => {
 const getTileIdFromTilesJson = async (item) => {
 
   const url = item.データ参照先;
-  const id = [item.大カテゴリー, item.中カテゴリー, item.メニュータイトル].filter(Boolean).join('_');
+  const id = `${item.大カテゴリー}_${item.中カテゴリー}_${item.メニュータイトル}`;
 
   if (url.includes('tiles.json')) {
     const res = await axios.get(url, getAxiosHeaders(url));
