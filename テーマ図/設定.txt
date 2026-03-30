@@ -8,6 +8,10 @@
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/yakumo.txt"
     },
     {
+      "name": "生活応援商品券",
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/giftcard.txt"
+    },
+    {
       "name": "さくら並木",
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/sakuranamiki.txt"
     },
