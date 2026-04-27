@@ -4,16 +4,16 @@
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/saigai.txt"
     },
     {
-      "name": "小泉八雲ゆかりの地",
-      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/yakumo.txt"
+      "name": "75周年パレード",
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/75th_anniversaryparade.txt"
     },
     {
       "name": "生活応援商品券",
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/giftcard.txt"
     },
     {
-      "name": "さくら並木",
-      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/sakuranamiki.txt"
+      "name": "小泉八雲ゆかりの地",
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/yakumo.txt"
     },
     {
       "name": "野菜摂取量を測ろう",
