@@ -327,24 +327,21 @@ const configToMenuYAML = async (config, outputFile) => {
                   }
                 }
               },
-              "道路通行情報": {
-                "id": "リアルタイム防災情報/道路通行情報",
-                "type": "category",
-                "items": {
-                  "道路規制": {
-                    "id": "リアルタイム防災情報/道路通行情報/道路規制",
-                    "type": "data",
-                    "dataType": "fiware",
-                    "dataId": "RestrictedTrafficAreaInformation",
-                    "shortId": "aoy"
-                  },
-                  "地下道冠水状況": {
-                    "id": "リアルタイム防災情報/道路通行情報/地下道冠水状況",
-                    "type": "data",
-                    "dataType": "fiware",
-                    "dataId": "UnderpassInformation",
-                    "shortId": "LEi"
-                  }
+              "道路通行規制": {
+                "id": "リアルタイム防災情報/道路通行規制",
+                "type": "data",
+                "dataType": "fiware",
+                "dataId": "RestrictedTrafficAreaInformation",
+                "shortId": "aoy"
+              },
+              "冠水状況": {
+                "id": "リアルタイム防災情報/冠水状況",
+                "type": "data",
+                "dataType": "fiware",
+                "dataId": "UnderpassInformation",
+                "shortId": "LEi",
+                "metadata": {
+                  "dataType": "Alert"
                 }
               }
             }
