@@ -371,6 +371,14 @@
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/75%E5%91%A8%E5%B9%B4%E3%83%91%E3%83%AC%E3%83%BC%E3%83%89_%E3%83%91%E3%83%AC%E3%83%BC%E3%83%89%E5%87%BA%E6%BC%94%E8%80%85%E8%A6%B3%E8%A6%A7%E3%82%A8%E3%83%AA%E3%82%A2/tiles.json"
     },
+    "75周年パレード_ハートフル・未就学児エリア": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/75%E5%91%A8%E5%B9%B4%E3%83%91%E3%83%AC%E3%83%BC%E3%83%89_%E3%83%8F%E3%83%BC%E3%83%88%E3%83%95%E3%83%AB%E3%83%BB%E6%9C%AA%E5%B0%B1%E5%AD%A6%E5%85%90%E3%82%A8%E3%83%AA%E3%82%A2/tiles.json"
+    },
+    "75周年パレード_ハートフルエリア利用者専用駐車場": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/75%E5%91%A8%E5%B9%B4%E3%83%91%E3%83%AC%E3%83%BC%E3%83%89_%E3%83%8F%E3%83%BC%E3%83%88%E3%83%95%E3%83%AB%E3%82%A8%E3%83%AA%E3%82%A2%E5%88%A9%E7%94%A8%E8%80%85%E5%B0%82%E7%94%A8%E9%A7%90%E8%BB%8A%E5%A0%B4/tiles.json"
+    },
     "75周年パレード_報道エリア": {
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/75%E5%91%A8%E5%B9%B4%E3%83%91%E3%83%AC%E3%83%BC%E3%83%89_%E5%A0%B1%E9%81%93%E3%82%A8%E3%83%AA%E3%82%A2/tiles.json"
@@ -1275,13 +1283,6 @@
       }
     },
     "PrecipitationGauge": {
-      "type": "geojson",
-      "data": {
-        "type": "FeatureCollection",
-        "features": []
-      }
-    },
-    "StreamGauge": {
       "type": "geojson",
       "data": {
         "type": "FeatureCollection",
@@ -30533,47 +30534,6 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-Polygon",
-      "type": "fill",
-      "source": "StreamGauge",
-      "filter": [
-        "==",
-        [
-          "geometry-type"
-        ],
-        "Polygon"
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "fill-color": [
-          "case",
-          [
-            "has",
-            "fill"
-          ],
-          [
-            "get",
-            "fill"
-          ],
-          "#c71585"
-        ],
-        "fill-opacity": [
-          "case",
-          [
-            "has",
-            "fill-opacity"
-          ],
-          [
-            "get",
-            "fill-opacity"
-          ],
-          0.35
-        ]
-      }
-    },
-    {
       "id": "リアルタイム防災情報/雨量・水位観測情報/河川・海岸カメラ-Polygon",
       "type": "fill",
       "source": "CameraInformation",
@@ -33508,7 +33468,7 @@
             "get",
             "fill"
           ],
-          "#4169e1"
+          "#00bfff"
         ],
         "fill-opacity": [
           "case",
@@ -33598,7 +33558,7 @@
             "get",
             "fill"
           ],
-          "#ffff00"
+          "#ffa500"
         ],
         "fill-opacity": [
           "case",
@@ -33930,6 +33890,96 @@
       },
       "metadata": {
         "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/パレード出演者観覧エリア"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア-Polygon",
+      "type": "fill",
+      "source": "75周年パレード_ハートフル・未就学児エリア",
+      "source-layer": "75周年パレード_ハートフル・未就学児エリア",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場-Polygon",
+      "type": "fill",
+      "source": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "source-layer": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場"
       }
     },
     {
@@ -40799,117 +40849,6 @@
       "id": "リアルタイム防災情報/雨量・水位観測情報/雨量計-LineString",
       "type": "line",
       "source": "PrecipitationGauge",
-      "filter": [
-        "==",
-        [
-          "geometry-type"
-        ],
-        "LineString"
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          [
-            "has",
-            "stroke"
-          ],
-          [
-            "get",
-            "stroke"
-          ],
-          "#c71585"
-        ],
-        "line-width": [
-          "interpolate",
-          [
-            "linear"
-          ],
-          [
-            "zoom"
-          ],
-          9,
-          1,
-          12,
-          2,
-          14,
-          5,
-          20,
-          10
-        ],
-        "line-opacity": [
-          "case",
-          [
-            "has",
-            "stroke-opacity"
-          ],
-          [
-            "get",
-            "stroke-opacity"
-          ],
-          1
-        ]
-      }
-    },
-    {
-      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-Polygon-outline",
-      "type": "line",
-      "source": "StreamGauge",
-      "filter": [
-        "==",
-        [
-          "geometry-type"
-        ],
-        "Polygon"
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "line-color": [
-          "case",
-          [
-            "has",
-            "stroke"
-          ],
-          [
-            "get",
-            "stroke"
-          ],
-          "#c71585"
-        ],
-        "line-width": [
-          "case",
-          [
-            "has",
-            "stroke-width"
-          ],
-          [
-            "get",
-            "stroke-width"
-          ],
-          1
-        ],
-        "line-opacity": [
-          "case",
-          [
-            "has",
-            "stroke-opacity"
-          ],
-          [
-            "get",
-            "stroke-opacity"
-          ],
-          1
-        ]
-      }
-    },
-    {
-      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-LineString",
-      "type": "line",
-      "source": "StreamGauge",
       "filter": [
         "==",
         [
@@ -48693,7 +48632,7 @@
             "get",
             "stroke"
           ],
-          "#4169e1"
+          "#00bfff"
         ],
         "line-width": [
           "case",
@@ -48750,7 +48689,7 @@
             "get",
             "stroke"
           ],
-          "#4169e1"
+          "#00bfff"
         ],
         "line-width": [
           "interpolate",
@@ -48931,7 +48870,7 @@
             "get",
             "stroke"
           ],
-          "#ffff00"
+          "#ffa500"
         ],
         "line-width": [
           "case",
@@ -48988,7 +48927,7 @@
             "get",
             "stroke"
           ],
-          "#ffff00"
+          "#ffa500"
         ],
         "line-width": [
           "interpolate",
@@ -49855,6 +49794,244 @@
       },
       "metadata": {
         "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/パレード出演者観覧エリア"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア-Polygon-outline",
+      "type": "line",
+      "source": "75周年パレード_ハートフル・未就学児エリア",
+      "source-layer": "75周年パレード_ハートフル・未就学児エリア",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア-LineString",
+      "type": "line",
+      "source": "75周年パレード_ハートフル・未就学児エリア",
+      "source-layer": "75周年パレード_ハートフル・未就学児エリア",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場-Polygon-outline",
+      "type": "line",
+      "source": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "source-layer": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場-LineString",
+      "type": "line",
+      "source": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "source-layer": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場"
       }
     },
     {
@@ -66159,54 +66336,6 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-Label",
-      "type": "symbol",
-      "source": "StreamGauge",
-      "filter": [
-        "==",
-        [
-          "geometry-type"
-        ],
-        "Point"
-      ],
-      "layout": {
-        "text-field": [
-          "get",
-          "title"
-        ],
-        "text-size": 12,
-        "text-font": [
-          "NotoSansJP-Regular"
-        ],
-        "text-anchor": "center",
-        "text-padding": 2,
-        "text-offset": [
-          0,
-          1
-        ],
-        "visibility": "none"
-      },
-      "paint": {
-        "text-color": [
-          "string",
-          [
-            "get",
-            "text-color"
-          ],
-          "#000000"
-        ],
-        "text-halo-width": 2.5,
-        "text-halo-color": [
-          "string",
-          [
-            "get",
-            "text-halo-color"
-          ],
-          "#ffffff"
-        ]
-      }
-    },
-    {
       "id": "リアルタイム防災情報/雨量・水位観測情報/河川・海岸カメラ-Label",
       "type": "symbol",
       "source": "CameraInformation",
@@ -70088,6 +70217,110 @@
       },
       "metadata": {
         "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/パレード出演者観覧エリア"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア-Label",
+      "type": "symbol",
+      "source": "75周年パレード_ハートフル・未就学児エリア",
+      "source-layer": "75周年パレード_ハートフル・未就学児エリア",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場-Label",
+      "type": "symbol",
+      "source": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "source-layer": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場"
       }
     },
     {
@@ -78611,193 +78844,6 @@
       "id": "リアルタイム防災情報/雨量・水位観測情報/雨量計-Symbol",
       "type": "symbol",
       "source": "PrecipitationGauge",
-      "filter": [
-        "all",
-        [
-          "==",
-          [
-            "geometry-type"
-          ],
-          "Point"
-        ]
-      ],
-      "layout": {
-        "icon-size": [
-          "case",
-          [
-            "has",
-            "marker-size"
-          ],
-          [
-            "match",
-            [
-              "get",
-              "marker-size"
-            ],
-            "small",
-            0.3,
-            "large",
-            0.7,
-            0.5
-          ],
-          0.5
-        ],
-        "icon-allow-overlap": true,
-        "icon-ignore-placement": true,
-        "icon-anchor": "bottom",
-        "icon-rotate": [
-          "get",
-          "_rotate"
-        ],
-        "icon-image": [
-          "get",
-          "marker-symbol"
-        ],
-        "visibility": "none"
-      },
-      "paint": {
-        "icon-color": [
-          "case",
-          [
-            "has",
-            "marker-color"
-          ],
-          [
-            "get",
-            "marker-color"
-          ],
-          "#c71585"
-        ],
-        "icon-opacity": [
-          "case",
-          [
-            "has",
-            "marker-opacity"
-          ],
-          [
-            "get",
-            "marker-opacity"
-          ],
-          1
-        ]
-      }
-    },
-    {
-      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-Point",
-      "type": "circle",
-      "source": "StreamGauge",
-      "filter": [
-        "all",
-        [
-          "==",
-          [
-            "geometry-type"
-          ],
-          "Point"
-        ],
-        [
-          "!",
-          [
-            "any",
-            [
-              "has",
-              "marker-symbol"
-            ]
-          ]
-        ]
-      ],
-      "layout": {
-        "visibility": "none"
-      },
-      "paint": {
-        "circle-radius": [
-          "case",
-          [
-            "==",
-            "small",
-            [
-              "get",
-              "marker-size"
-            ]
-          ],
-          7,
-          [
-            "==",
-            "large",
-            [
-              "get",
-              "marker-size"
-            ]
-          ],
-          13,
-          7
-        ],
-        "circle-color": [
-          "case",
-          [
-            "has",
-            "marker-color"
-          ],
-          [
-            "get",
-            "marker-color"
-          ],
-          "#c71585"
-        ],
-        "circle-opacity": [
-          "case",
-          [
-            "has",
-            "marker-opacity"
-          ],
-          [
-            "get",
-            "marker-opacity"
-          ],
-          0.6
-        ],
-        "circle-stroke-width": [
-          "case",
-          [
-            "has",
-            "stroke-width"
-          ],
-          [
-            "get",
-            "stroke-width"
-          ],
-          1
-        ],
-        "circle-stroke-color": [
-          "case",
-          [
-            "has",
-            "stroke"
-          ],
-          [
-            "get",
-            "stroke"
-          ],
-          "#c71585"
-        ],
-        "circle-stroke-opacity": [
-          "case",
-          [
-            "has",
-            "stroke-opacity"
-          ],
-          [
-            "get",
-            "stroke-opacity"
-          ],
-          1
-        ]
-      }
-    },
-    {
-      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-Symbol",
-      "type": "symbol",
-      "source": "StreamGauge",
       "filter": [
         "all",
         [
@@ -89669,7 +89715,7 @@
             "get",
             "marker-color"
           ],
-          "#4169e1"
+          "#00bfff"
         ],
         "circle-opacity": [
           "case",
@@ -89705,7 +89751,7 @@
             "get",
             "stroke"
           ],
-          "#4169e1"
+          "#00bfff"
         ],
         "circle-stroke-opacity": [
           "case",
@@ -89784,7 +89830,7 @@
             "get",
             "marker-color"
           ],
-          "#4169e1"
+          "#00bfff"
         ],
         "icon-opacity": [
           "case",
@@ -89846,7 +89892,7 @@
           "get",
           "_rotate"
         ],
-        "icon-image": "star",
+        "icon-image": "balloon",
         "visibility": "visible"
       },
       "paint": {
@@ -89940,7 +89986,7 @@
             "get",
             "marker-color"
           ],
-          "#ffff00"
+          "#ffa500"
         ],
         "circle-opacity": [
           "case",
@@ -89976,7 +90022,7 @@
             "get",
             "stroke"
           ],
-          "#ffff00"
+          "#ffa500"
         ],
         "circle-stroke-opacity": [
           "case",
@@ -90055,7 +90101,7 @@
             "get",
             "marker-color"
           ],
-          "#ffff00"
+          "#ffa500"
         ],
         "icon-opacity": [
           "case",
@@ -91080,6 +91126,396 @@
       },
       "metadata": {
         "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/パレード出演者観覧エリア"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア-Point",
+      "type": "circle",
+      "source": "75周年パレード_ハートフル・未就学児エリア",
+      "source-layer": "75周年パレード_ハートフル・未就学児エリア",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#65C294"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア-Symbol",
+      "type": "symbol",
+      "source": "75周年パレード_ハートフル・未就学児エリア",
+      "source-layer": "75周年パレード_ハートフル・未就学児エリア",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "visible"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#65C294"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフル・未就学児エリア"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場-Point",
+      "type": "circle",
+      "source": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "source-layer": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#C3D941"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場"
+      }
+    },
+    {
+      "id": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場-Symbol",
+      "type": "symbol",
+      "source": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "source-layer": "75周年パレード_ハートフルエリア利用者専用駐車場",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "visible"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#C3D941"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "観光・イベント/【市政75周年】みなとまつりスペシャルパレード/ハートフルエリア利用者専用駐車場"
       }
     },
     {
