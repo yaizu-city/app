@@ -30575,7 +30575,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/道路規制-Polygon",
+      "id": "リアルタイム防災情報/道路通行規制-Polygon",
       "type": "fill",
       "source": "RestrictedTrafficAreaInformation",
       "filter": [
@@ -30616,7 +30616,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/地下道冠水状況-Polygon",
+      "id": "リアルタイム防災情報/冠水状況-Polygon",
       "type": "fill",
       "source": "UnderpassInformation",
       "filter": [
@@ -41015,7 +41015,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/道路規制-Polygon-outline",
+      "id": "リアルタイム防災情報/道路通行規制-Polygon-outline",
       "type": "line",
       "source": "RestrictedTrafficAreaInformation",
       "filter": [
@@ -41068,7 +41068,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/道路規制-LineString",
+      "id": "リアルタイム防災情報/道路通行規制-LineString",
       "type": "line",
       "source": "RestrictedTrafficAreaInformation",
       "filter": [
@@ -41126,7 +41126,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/地下道冠水状況-Polygon-outline",
+      "id": "リアルタイム防災情報/冠水状況-Polygon-outline",
       "type": "line",
       "source": "UnderpassInformation",
       "filter": [
@@ -41179,7 +41179,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/地下道冠水状況-LineString",
+      "id": "リアルタイム防災情報/冠水状況-LineString",
       "type": "line",
       "source": "UnderpassInformation",
       "filter": [
@@ -66384,7 +66384,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/道路規制-Label",
+      "id": "リアルタイム防災情報/道路通行規制-Label",
       "type": "symbol",
       "source": "RestrictedTrafficAreaInformation",
       "filter": [
@@ -66432,7 +66432,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/地下道冠水状況-Label",
+      "id": "リアルタイム防災情報/冠水状況-Label",
       "type": "symbol",
       "source": "UnderpassInformation",
       "filter": [
@@ -79103,7 +79103,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/道路規制-Point",
+      "id": "リアルタイム防災情報/道路通行規制-Point",
       "type": "circle",
       "source": "RestrictedTrafficAreaInformation",
       "filter": [
@@ -79215,7 +79215,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/道路規制-Symbol",
+      "id": "リアルタイム防災情報/道路通行規制-Symbol",
       "type": "symbol",
       "source": "RestrictedTrafficAreaInformation",
       "filter": [
@@ -79290,7 +79290,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/地下道冠水状況-Point",
+      "id": "リアルタイム防災情報/冠水状況-Point",
       "type": "circle",
       "source": "UnderpassInformation",
       "filter": [
@@ -79402,7 +79402,7 @@
       }
     },
     {
-      "id": "リアルタイム防災情報/道路通行情報/地下道冠水状況-Symbol",
+      "id": "リアルタイム防災情報/冠水状況-Symbol",
       "type": "symbol",
       "source": "UnderpassInformation",
       "filter": [
