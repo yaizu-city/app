@@ -4,10 +4,6 @@
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/saigai.txt"
     },
     {
-      "name": "75周年パレード",
-      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/75th_anniversaryparade.txt"
-    },
-    {
       "name": "生活応援商品券",
       "styleUrl": "https://yaizu-city.github.io/app/テーマ図/giftcard.txt"
     },
