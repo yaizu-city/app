@@ -29,6 +29,10 @@
     },
     {
       "name": "洪水ハザード",
-      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/kouzuihazado.txt"
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/kouzuihazado.txt"takashiohazado
+    },
+    {
+      "name": "高潮ハザード",
+      "styleUrl": "https://yaizu-city.github.io/app/テーマ図/takashiohazado.txt"
     }
 ]
