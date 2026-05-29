@@ -278,16 +278,6 @@ const configToMenuYAML = async (config, outputFile) => {
                       "dataType": "Alert"
                     }
                   },
-                  "気象／警報・注意報": {
-                    "id": "リアルタイム防災情報/気象情報/気象／警報・注意報",
-                    "type": "data",
-                    "dataType": "fiware",
-                    "dataId": "WeatherAlert",
-                    "shortId": "6wu",
-                    "metadata": {
-                      "dataType": "Alert"
-                    }
-                  }
                 }
               },
               "地震情報／津波警報・注意報":{
