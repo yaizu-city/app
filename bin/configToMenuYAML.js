@@ -311,6 +311,13 @@ const configToMenuYAML = async (config, outputFile) => {
                     "dataId": "PrecipitationGauge",
                     "shortId": "fEX",
                   },
+                  "河川水位計": {
+                    "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計",
+                    "type": "data",
+                    "dataType": "fiware",
+                    "dataId": "StreamGauge",
+                    "shortId": "OAa",
+                  },
                   "河川・海岸カメラ": {
                     "id": "リアルタイム防災情報/雨量・水位観測情報/河川・海岸カメラ",
                     "type": "data",
