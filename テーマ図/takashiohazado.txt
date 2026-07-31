@@ -147,6 +147,10 @@
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E8%A6%81%E9%85%8D%E6%85%AE%E8%80%85%E5%88%A9%E7%94%A8%E6%96%BD%E8%A8%AD/tiles.json"
     },
+    "アンダーパス": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E3%82%A2%E3%83%B3%E3%83%80%E3%83%BC%E3%83%91%E3%82%B9/tiles.json"
+    },
     "緊急輸送路_一次緊急輸送路": {
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E7%B7%8A%E6%80%A5%E8%BC%B8%E9%80%81%E8%B7%AF_%E4%B8%80%E6%AC%A1%E7%B7%8A%E6%80%A5%E8%BC%B8%E9%80%81%E8%B7%AF/tiles.json"
@@ -234,6 +238,14 @@
     "浸水履歴_統合": {
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E6%B5%B8%E6%B0%B4%E5%B1%A5%E6%AD%B4_%E7%B5%B1%E5%90%88/tiles.json"
+    },
+    "浸水履歴_令和7年": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E6%B5%B8%E6%B0%B4%E5%B1%A5%E6%AD%B4_%E4%BB%A4%E5%92%8C7%E5%B9%B4/tiles.json"
+    },
+    "浸水履歴_令和6年": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E6%B5%B8%E6%B0%B4%E5%B1%A5%E6%AD%B4_%E4%BB%A4%E5%92%8C6%E5%B9%B4/tiles.json"
     },
     "浸水履歴_令和4年": {
       "type": "vector",
@@ -751,6 +763,10 @@
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E9%80%9A%E5%AD%A6%E8%B7%AF_%E9%BB%92%E7%9F%B3%E5%B0%8F%E5%AD%A6%E6%A0%A1/tiles.json"
     },
+    "子どもを守る家": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E5%AD%90%E3%81%A9%E3%82%82%E3%82%92%E5%AE%88%E3%82%8B%E5%AE%B6/tiles.json"
+    },
     "放課後等デイサービス一覧": {
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E6%94%BE%E8%AA%B2%E5%BE%8C%E7%AD%89%E3%83%87%E3%82%A4%E3%82%B5%E3%83%BC%E3%83%93%E3%82%B9%E4%B8%80%E8%A6%A7/tiles.json"
@@ -1231,6 +1247,13 @@
       }
     },
     "PrecipitationGauge": {
+      "type": "geojson",
+      "data": {
+        "type": "FeatureCollection",
+        "features": []
+      }
+    },
+    "StreamGauge": {
       "type": "geojson",
       "data": {
         "type": "FeatureCollection",
@@ -30482,6 +30505,47 @@
       }
     },
     {
+      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-Polygon",
+      "type": "fill",
+      "source": "StreamGauge",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      }
+    },
+    {
       "id": "リアルタイム防災情報/雨量・水位観測情報/河川・海岸カメラ-Polygon",
       "type": "fill",
       "source": "CameraInformation",
@@ -31277,6 +31341,51 @@
       },
       "metadata": {
         "menuId": "防災/防災施設/要配慮者利用施設"
+      }
+    },
+    {
+      "id": "防災/防災施設/アンダーパス-Polygon",
+      "type": "fill",
+      "source": "アンダーパス",
+      "source-layer": "アンダーパス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/防災施設/アンダーパス"
       }
     },
     {
@@ -32225,7 +32334,7 @@
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）-Polygon",
       "type": "fill",
       "source": "浸水履歴_統合",
       "source-layer": "浸水履歴_統合",
@@ -32266,11 +32375,101 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和4年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和7年-Polygon",
+      "type": "fill",
+      "source": "浸水履歴_令和7年",
+      "source-layer": "浸水履歴_令和7年",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#4169e1"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和7年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和6年-Polygon",
+      "type": "fill",
+      "source": "浸水履歴_令和6年",
+      "source-layer": "浸水履歴_令和6年",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#4169e1"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和6年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和4年-Polygon",
       "type": "fill",
       "source": "浸水履歴_令和4年",
       "source-layer": "浸水履歴_令和4年",
@@ -32311,11 +32510,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和4年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和4年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和元年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和元年-Polygon",
       "type": "fill",
       "source": "浸水履歴_令和元年",
       "source-layer": "浸水履歴_令和元年",
@@ -32356,11 +32555,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和元年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和元年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成29年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成29年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成29年",
       "source-layer": "浸水履歴_平成29年",
@@ -32401,11 +32600,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成29年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成29年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成26年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成26年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成26年",
       "source-layer": "浸水履歴_平成26年",
@@ -32446,11 +32645,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成26年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成26年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成25年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成25年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成25年",
       "source-layer": "浸水履歴_平成25年",
@@ -32491,11 +32690,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成25年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成25年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成24年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成24年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成24年",
       "source-layer": "浸水履歴_平成24年",
@@ -32536,11 +32735,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成24年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成24年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成23年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成23年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成23年",
       "source-layer": "浸水履歴_平成23年",
@@ -32581,11 +32780,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成23年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成23年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成22年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成22年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成22年",
       "source-layer": "浸水履歴_平成22年",
@@ -32626,11 +32825,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成22年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成22年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成20年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成20年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成20年",
       "source-layer": "浸水履歴_平成20年",
@@ -32671,11 +32870,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成20年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成20年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成19年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成19年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成19年",
       "source-layer": "浸水履歴_平成19年",
@@ -32716,11 +32915,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成19年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成19年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成18年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成18年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成18年",
       "source-layer": "浸水履歴_平成18年",
@@ -32761,11 +32960,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成18年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成18年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成17年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成17年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成17年",
       "source-layer": "浸水履歴_平成17年",
@@ -32806,11 +33005,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成17年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成17年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成16年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成16年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成16年",
       "source-layer": "浸水履歴_平成16年",
@@ -32851,11 +33050,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成16年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成16年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成15年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成15年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成15年",
       "source-layer": "浸水履歴_平成15年",
@@ -32896,11 +33095,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成15年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成15年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成14年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成14年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成14年",
       "source-layer": "浸水履歴_平成14年",
@@ -32941,11 +33140,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成14年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成14年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成13年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成13年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成13年",
       "source-layer": "浸水履歴_平成13年",
@@ -32986,11 +33185,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成13年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成13年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成12年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成12年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成12年",
       "source-layer": "浸水履歴_平成12年",
@@ -33031,11 +33230,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成12年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成12年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成11年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成11年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成11年",
       "source-layer": "浸水履歴_平成11年",
@@ -33076,11 +33275,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成11年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成11年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成10年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成10年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成10年",
       "source-layer": "浸水履歴_平成10年",
@@ -33121,11 +33320,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成10年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成10年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成9年-Polygon",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成9年-Polygon",
       "type": "fill",
       "source": "浸水履歴_平成9年",
       "source-layer": "浸水履歴_平成9年",
@@ -33166,7 +33365,7 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成9年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成9年"
       }
     },
     {
@@ -38075,6 +38274,51 @@
       }
     },
     {
+      "id": "こども・教育/子どもを守る家-Polygon",
+      "type": "fill",
+      "source": "子どもを守る家",
+      "source-layer": "子どもを守る家",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#c71585"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "こども・教育/子どもを守る家"
+      }
+    },
+    {
       "id": "こども・教育/その他教育/放課後等デイサービス-Polygon",
       "type": "fill",
       "source": "放課後等デイサービス一覧",
@@ -40171,6 +40415,117 @@
       "id": "リアルタイム防災情報/雨量・水位観測情報/雨量計-LineString",
       "type": "line",
       "source": "PrecipitationGauge",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      }
+    },
+    {
+      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-Polygon-outline",
+      "type": "line",
+      "source": "StreamGauge",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      }
+    },
+    {
+      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-LineString",
+      "type": "line",
+      "source": "StreamGauge",
       "filter": [
         "==",
         [
@@ -42341,6 +42696,125 @@
       },
       "metadata": {
         "menuId": "防災/防災施設/要配慮者利用施設"
+      }
+    },
+    {
+      "id": "防災/防災施設/アンダーパス-Polygon-outline",
+      "type": "line",
+      "source": "アンダーパス",
+      "source-layer": "アンダーパス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/防災施設/アンダーパス"
+      }
+    },
+    {
+      "id": "防災/防災施設/アンダーパス-LineString",
+      "type": "line",
+      "source": "アンダーパス",
+      "source-layer": "アンダーパス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/防災施設/アンダーパス"
       }
     },
     {
@@ -44843,7 +45317,7 @@
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_統合",
       "source-layer": "浸水履歴_統合",
@@ -44896,11 +45370,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）-LineString",
       "type": "line",
       "source": "浸水履歴_統合",
       "source-layer": "浸水履歴_統合",
@@ -44958,11 +45432,249 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和4年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和7年-Polygon-outline",
+      "type": "line",
+      "source": "浸水履歴_令和7年",
+      "source-layer": "浸水履歴_令和7年",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#4169e1"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和7年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和7年-LineString",
+      "type": "line",
+      "source": "浸水履歴_令和7年",
+      "source-layer": "浸水履歴_令和7年",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#4169e1"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和7年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和6年-Polygon-outline",
+      "type": "line",
+      "source": "浸水履歴_令和6年",
+      "source-layer": "浸水履歴_令和6年",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#4169e1"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和6年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和6年-LineString",
+      "type": "line",
+      "source": "浸水履歴_令和6年",
+      "source-layer": "浸水履歴_令和6年",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#4169e1"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和6年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和4年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_令和4年",
       "source-layer": "浸水履歴_令和4年",
@@ -45015,11 +45727,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和4年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和4年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和4年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和4年-LineString",
       "type": "line",
       "source": "浸水履歴_令和4年",
       "source-layer": "浸水履歴_令和4年",
@@ -45077,11 +45789,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和4年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和4年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和元年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和元年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_令和元年",
       "source-layer": "浸水履歴_令和元年",
@@ -45134,11 +45846,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和元年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和元年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和元年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和元年-LineString",
       "type": "line",
       "source": "浸水履歴_令和元年",
       "source-layer": "浸水履歴_令和元年",
@@ -45196,11 +45908,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和元年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和元年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成29年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成29年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成29年",
       "source-layer": "浸水履歴_平成29年",
@@ -45253,11 +45965,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成29年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成29年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成29年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成29年-LineString",
       "type": "line",
       "source": "浸水履歴_平成29年",
       "source-layer": "浸水履歴_平成29年",
@@ -45315,11 +46027,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成29年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成29年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成26年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成26年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成26年",
       "source-layer": "浸水履歴_平成26年",
@@ -45372,11 +46084,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成26年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成26年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成26年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成26年-LineString",
       "type": "line",
       "source": "浸水履歴_平成26年",
       "source-layer": "浸水履歴_平成26年",
@@ -45434,11 +46146,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成26年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成26年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成25年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成25年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成25年",
       "source-layer": "浸水履歴_平成25年",
@@ -45491,11 +46203,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成25年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成25年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成25年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成25年-LineString",
       "type": "line",
       "source": "浸水履歴_平成25年",
       "source-layer": "浸水履歴_平成25年",
@@ -45553,11 +46265,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成25年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成25年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成24年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成24年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成24年",
       "source-layer": "浸水履歴_平成24年",
@@ -45610,11 +46322,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成24年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成24年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成24年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成24年-LineString",
       "type": "line",
       "source": "浸水履歴_平成24年",
       "source-layer": "浸水履歴_平成24年",
@@ -45672,11 +46384,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成24年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成24年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成23年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成23年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成23年",
       "source-layer": "浸水履歴_平成23年",
@@ -45729,11 +46441,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成23年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成23年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成23年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成23年-LineString",
       "type": "line",
       "source": "浸水履歴_平成23年",
       "source-layer": "浸水履歴_平成23年",
@@ -45791,11 +46503,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成23年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成23年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成22年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成22年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成22年",
       "source-layer": "浸水履歴_平成22年",
@@ -45848,11 +46560,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成22年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成22年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成22年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成22年-LineString",
       "type": "line",
       "source": "浸水履歴_平成22年",
       "source-layer": "浸水履歴_平成22年",
@@ -45910,11 +46622,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成22年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成22年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成20年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成20年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成20年",
       "source-layer": "浸水履歴_平成20年",
@@ -45967,11 +46679,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成20年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成20年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成20年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成20年-LineString",
       "type": "line",
       "source": "浸水履歴_平成20年",
       "source-layer": "浸水履歴_平成20年",
@@ -46029,11 +46741,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成20年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成20年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成19年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成19年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成19年",
       "source-layer": "浸水履歴_平成19年",
@@ -46086,11 +46798,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成19年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成19年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成19年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成19年-LineString",
       "type": "line",
       "source": "浸水履歴_平成19年",
       "source-layer": "浸水履歴_平成19年",
@@ -46148,11 +46860,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成19年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成19年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成18年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成18年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成18年",
       "source-layer": "浸水履歴_平成18年",
@@ -46205,11 +46917,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成18年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成18年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成18年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成18年-LineString",
       "type": "line",
       "source": "浸水履歴_平成18年",
       "source-layer": "浸水履歴_平成18年",
@@ -46267,11 +46979,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成18年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成18年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成17年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成17年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成17年",
       "source-layer": "浸水履歴_平成17年",
@@ -46324,11 +47036,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成17年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成17年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成17年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成17年-LineString",
       "type": "line",
       "source": "浸水履歴_平成17年",
       "source-layer": "浸水履歴_平成17年",
@@ -46386,11 +47098,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成17年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成17年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成16年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成16年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成16年",
       "source-layer": "浸水履歴_平成16年",
@@ -46443,11 +47155,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成16年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成16年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成16年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成16年-LineString",
       "type": "line",
       "source": "浸水履歴_平成16年",
       "source-layer": "浸水履歴_平成16年",
@@ -46505,11 +47217,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成16年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成16年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成15年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成15年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成15年",
       "source-layer": "浸水履歴_平成15年",
@@ -46562,11 +47274,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成15年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成15年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成15年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成15年-LineString",
       "type": "line",
       "source": "浸水履歴_平成15年",
       "source-layer": "浸水履歴_平成15年",
@@ -46624,11 +47336,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成15年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成15年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成14年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成14年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成14年",
       "source-layer": "浸水履歴_平成14年",
@@ -46681,11 +47393,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成14年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成14年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成14年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成14年-LineString",
       "type": "line",
       "source": "浸水履歴_平成14年",
       "source-layer": "浸水履歴_平成14年",
@@ -46743,11 +47455,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成14年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成14年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成13年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成13年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成13年",
       "source-layer": "浸水履歴_平成13年",
@@ -46800,11 +47512,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成13年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成13年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成13年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成13年-LineString",
       "type": "line",
       "source": "浸水履歴_平成13年",
       "source-layer": "浸水履歴_平成13年",
@@ -46862,11 +47574,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成13年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成13年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成12年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成12年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成12年",
       "source-layer": "浸水履歴_平成12年",
@@ -46919,11 +47631,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成12年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成12年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成12年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成12年-LineString",
       "type": "line",
       "source": "浸水履歴_平成12年",
       "source-layer": "浸水履歴_平成12年",
@@ -46981,11 +47693,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成12年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成12年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成11年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成11年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成11年",
       "source-layer": "浸水履歴_平成11年",
@@ -47038,11 +47750,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成11年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成11年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成11年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成11年-LineString",
       "type": "line",
       "source": "浸水履歴_平成11年",
       "source-layer": "浸水履歴_平成11年",
@@ -47100,11 +47812,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成11年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成11年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成10年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成10年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成10年",
       "source-layer": "浸水履歴_平成10年",
@@ -47157,11 +47869,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成10年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成10年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成10年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成10年-LineString",
       "type": "line",
       "source": "浸水履歴_平成10年",
       "source-layer": "浸水履歴_平成10年",
@@ -47219,11 +47931,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成10年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成10年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成9年-Polygon-outline",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成9年-Polygon-outline",
       "type": "line",
       "source": "浸水履歴_平成9年",
       "source-layer": "浸水履歴_平成9年",
@@ -47276,11 +47988,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成9年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成9年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成9年-LineString",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成9年-LineString",
       "type": "line",
       "source": "浸水履歴_平成9年",
       "source-layer": "浸水履歴_平成9年",
@@ -47338,7 +48050,7 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成9年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成9年"
       }
     },
     {
@@ -60313,6 +61025,125 @@
       }
     },
     {
+      "id": "こども・教育/子どもを守る家-Polygon-outline",
+      "type": "line",
+      "source": "子どもを守る家",
+      "source-layer": "子どもを守る家",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "こども・教育/子どもを守る家"
+      }
+    },
+    {
+      "id": "こども・教育/子どもを守る家-LineString",
+      "type": "line",
+      "source": "子どもを守る家",
+      "source-layer": "子どもを守る家",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "こども・教育/子どもを守る家"
+      }
+    },
+    {
       "id": "こども・教育/その他教育/放課後等デイサービス-Polygon-outline",
       "type": "line",
       "source": "放課後等デイサービス一覧",
@@ -64000,6 +64831,54 @@
       }
     },
     {
+      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-Label",
+      "type": "symbol",
+      "source": "StreamGauge",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      }
+    },
+    {
       "id": "リアルタイム防災情報/雨量・水位観測情報/河川・海岸カメラ-Label",
       "type": "symbol",
       "source": "CameraInformation",
@@ -64921,6 +65800,58 @@
       },
       "metadata": {
         "menuId": "防災/防災施設/要配慮者利用施設"
+      }
+    },
+    {
+      "id": "防災/防災施設/アンダーパス-Label",
+      "type": "symbol",
+      "source": "アンダーパス",
+      "source-layer": "アンダーパス",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "visible"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/防災施設/アンダーパス"
       }
     },
     {
@@ -66016,7 +66947,7 @@
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）-Label",
       "type": "symbol",
       "source": "浸水履歴_統合",
       "source-layer": "浸水履歴_統合",
@@ -66064,11 +66995,115 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和4年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和7年-Label",
+      "type": "symbol",
+      "source": "浸水履歴_令和7年",
+      "source-layer": "浸水履歴_令和7年",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和7年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和6年-Label",
+      "type": "symbol",
+      "source": "浸水履歴_令和6年",
+      "source-layer": "浸水履歴_令和6年",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和6年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和4年-Label",
       "type": "symbol",
       "source": "浸水履歴_令和4年",
       "source-layer": "浸水履歴_令和4年",
@@ -66116,11 +67151,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和4年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和4年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和元年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和元年-Label",
       "type": "symbol",
       "source": "浸水履歴_令和元年",
       "source-layer": "浸水履歴_令和元年",
@@ -66168,11 +67203,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和元年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和元年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成29年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成29年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成29年",
       "source-layer": "浸水履歴_平成29年",
@@ -66220,11 +67255,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成29年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成29年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成26年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成26年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成26年",
       "source-layer": "浸水履歴_平成26年",
@@ -66272,11 +67307,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成26年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成26年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成25年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成25年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成25年",
       "source-layer": "浸水履歴_平成25年",
@@ -66324,11 +67359,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成25年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成25年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成24年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成24年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成24年",
       "source-layer": "浸水履歴_平成24年",
@@ -66376,11 +67411,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成24年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成24年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成23年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成23年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成23年",
       "source-layer": "浸水履歴_平成23年",
@@ -66428,11 +67463,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成23年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成23年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成22年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成22年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成22年",
       "source-layer": "浸水履歴_平成22年",
@@ -66480,11 +67515,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成22年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成22年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成20年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成20年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成20年",
       "source-layer": "浸水履歴_平成20年",
@@ -66532,11 +67567,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成20年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成20年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成19年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成19年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成19年",
       "source-layer": "浸水履歴_平成19年",
@@ -66584,11 +67619,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成19年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成19年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成18年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成18年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成18年",
       "source-layer": "浸水履歴_平成18年",
@@ -66636,11 +67671,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成18年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成18年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成17年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成17年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成17年",
       "source-layer": "浸水履歴_平成17年",
@@ -66688,11 +67723,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成17年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成17年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成16年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成16年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成16年",
       "source-layer": "浸水履歴_平成16年",
@@ -66740,11 +67775,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成16年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成16年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成15年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成15年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成15年",
       "source-layer": "浸水履歴_平成15年",
@@ -66792,11 +67827,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成15年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成15年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成14年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成14年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成14年",
       "source-layer": "浸水履歴_平成14年",
@@ -66844,11 +67879,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成14年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成14年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成13年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成13年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成13年",
       "source-layer": "浸水履歴_平成13年",
@@ -66896,11 +67931,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成13年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成13年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成12年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成12年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成12年",
       "source-layer": "浸水履歴_平成12年",
@@ -66948,11 +67983,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成12年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成12年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成11年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成11年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成11年",
       "source-layer": "浸水履歴_平成11年",
@@ -67000,11 +68035,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成11年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成11年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成10年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成10年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成10年",
       "source-layer": "浸水履歴_平成10年",
@@ -67052,11 +68087,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成10年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成10年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成9年-Label",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成9年-Label",
       "type": "symbol",
       "source": "浸水履歴_平成9年",
       "source-layer": "浸水履歴_平成9年",
@@ -67104,7 +68139,7 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成9年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成9年"
       }
     },
     {
@@ -72776,6 +73811,58 @@
       }
     },
     {
+      "id": "こども・教育/子どもを守る家-Label",
+      "type": "symbol",
+      "source": "子どもを守る家",
+      "source-layer": "子どもを守る家",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "こども・教育/子どもを守る家"
+      }
+    },
+    {
       "id": "こども・教育/その他教育/放課後等デイサービス-Label",
       "type": "symbol",
       "source": "放課後等デイサービス一覧",
@@ -75856,6 +76943,193 @@
       }
     },
     {
+      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-Point",
+      "type": "circle",
+      "source": "StreamGauge",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#c71585"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      }
+    },
+    {
+      "id": "リアルタイム防災情報/雨量・水位観測情報/河川水位計-Symbol",
+      "type": "symbol",
+      "source": "StreamGauge",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      }
+    },
+    {
       "id": "リアルタイム防災情報/雨量・水位観測情報/河川・海岸カメラ-Point",
       "type": "circle",
       "source": "CameraInformation",
@@ -77911,6 +79185,82 @@
       },
       "metadata": {
         "menuId": "防災/防災施設/要配慮者利用施設"
+      }
+    },
+    {
+      "id": "防災/防災施設/アンダーパス-Symbol",
+      "type": "symbol",
+      "source": "アンダーパス",
+      "source-layer": "アンダーパス",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "underpass",
+        "visibility": "visible"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/防災施設/アンダーパス"
       }
     },
     {
@@ -81771,7 +83121,7 @@
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）-Point",
       "type": "circle",
       "source": "浸水履歴_統合",
       "source-layer": "浸水履歴_統合",
@@ -81883,11 +83233,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）-Symbol",
       "type": "symbol",
       "source": "浸水履歴_統合",
       "source-layer": "浸水履歴_統合",
@@ -81962,11 +83312,401 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/統合（平成9年～令和5年）"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/統合（平成9年～令和7年）"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和4年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和7年-Point",
+      "type": "circle",
+      "source": "浸水履歴_令和7年",
+      "source-layer": "浸水履歴_令和7年",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#4169e1"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#4169e1"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和7年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和7年-Symbol",
+      "type": "symbol",
+      "source": "浸水履歴_令和7年",
+      "source-layer": "浸水履歴_令和7年",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#4169e1"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和7年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和6年-Point",
+      "type": "circle",
+      "source": "浸水履歴_令和6年",
+      "source-layer": "浸水履歴_令和6年",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#4169e1"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#4169e1"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和6年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和6年-Symbol",
+      "type": "symbol",
+      "source": "浸水履歴_令和6年",
+      "source-layer": "浸水履歴_令和6年",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#4169e1"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和6年"
+      }
+    },
+    {
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和4年-Point",
       "type": "circle",
       "source": "浸水履歴_令和4年",
       "source-layer": "浸水履歴_令和4年",
@@ -82078,11 +83818,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和4年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和4年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和4年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和4年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_令和4年",
       "source-layer": "浸水履歴_令和4年",
@@ -82157,11 +83897,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和4年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和4年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和元年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和元年-Point",
       "type": "circle",
       "source": "浸水履歴_令和元年",
       "source-layer": "浸水履歴_令和元年",
@@ -82273,11 +84013,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和元年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和元年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/令和元年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/令和元年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_令和元年",
       "source-layer": "浸水履歴_令和元年",
@@ -82352,11 +84092,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/令和元年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/令和元年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成29年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成29年-Point",
       "type": "circle",
       "source": "浸水履歴_平成29年",
       "source-layer": "浸水履歴_平成29年",
@@ -82468,11 +84208,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成29年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成29年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成29年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成29年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成29年",
       "source-layer": "浸水履歴_平成29年",
@@ -82547,11 +84287,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成29年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成29年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成26年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成26年-Point",
       "type": "circle",
       "source": "浸水履歴_平成26年",
       "source-layer": "浸水履歴_平成26年",
@@ -82663,11 +84403,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成26年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成26年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成26年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成26年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成26年",
       "source-layer": "浸水履歴_平成26年",
@@ -82742,11 +84482,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成26年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成26年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成25年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成25年-Point",
       "type": "circle",
       "source": "浸水履歴_平成25年",
       "source-layer": "浸水履歴_平成25年",
@@ -82858,11 +84598,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成25年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成25年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成25年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成25年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成25年",
       "source-layer": "浸水履歴_平成25年",
@@ -82937,11 +84677,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成25年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成25年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成24年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成24年-Point",
       "type": "circle",
       "source": "浸水履歴_平成24年",
       "source-layer": "浸水履歴_平成24年",
@@ -83053,11 +84793,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成24年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成24年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成24年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成24年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成24年",
       "source-layer": "浸水履歴_平成24年",
@@ -83132,11 +84872,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成24年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成24年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成23年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成23年-Point",
       "type": "circle",
       "source": "浸水履歴_平成23年",
       "source-layer": "浸水履歴_平成23年",
@@ -83248,11 +84988,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成23年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成23年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成23年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成23年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成23年",
       "source-layer": "浸水履歴_平成23年",
@@ -83327,11 +85067,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成23年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成23年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成22年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成22年-Point",
       "type": "circle",
       "source": "浸水履歴_平成22年",
       "source-layer": "浸水履歴_平成22年",
@@ -83443,11 +85183,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成22年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成22年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成22年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成22年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成22年",
       "source-layer": "浸水履歴_平成22年",
@@ -83522,11 +85262,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成22年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成22年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成20年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成20年-Point",
       "type": "circle",
       "source": "浸水履歴_平成20年",
       "source-layer": "浸水履歴_平成20年",
@@ -83638,11 +85378,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成20年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成20年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成20年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成20年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成20年",
       "source-layer": "浸水履歴_平成20年",
@@ -83717,11 +85457,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成20年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成20年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成19年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成19年-Point",
       "type": "circle",
       "source": "浸水履歴_平成19年",
       "source-layer": "浸水履歴_平成19年",
@@ -83833,11 +85573,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成19年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成19年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成19年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成19年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成19年",
       "source-layer": "浸水履歴_平成19年",
@@ -83912,11 +85652,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成19年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成19年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成18年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成18年-Point",
       "type": "circle",
       "source": "浸水履歴_平成18年",
       "source-layer": "浸水履歴_平成18年",
@@ -84028,11 +85768,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成18年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成18年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成18年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成18年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成18年",
       "source-layer": "浸水履歴_平成18年",
@@ -84107,11 +85847,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成18年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成18年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成17年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成17年-Point",
       "type": "circle",
       "source": "浸水履歴_平成17年",
       "source-layer": "浸水履歴_平成17年",
@@ -84223,11 +85963,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成17年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成17年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成17年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成17年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成17年",
       "source-layer": "浸水履歴_平成17年",
@@ -84302,11 +86042,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成17年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成17年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成16年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成16年-Point",
       "type": "circle",
       "source": "浸水履歴_平成16年",
       "source-layer": "浸水履歴_平成16年",
@@ -84418,11 +86158,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成16年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成16年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成16年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成16年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成16年",
       "source-layer": "浸水履歴_平成16年",
@@ -84497,11 +86237,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成16年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成16年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成15年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成15年-Point",
       "type": "circle",
       "source": "浸水履歴_平成15年",
       "source-layer": "浸水履歴_平成15年",
@@ -84613,11 +86353,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成15年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成15年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成15年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成15年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成15年",
       "source-layer": "浸水履歴_平成15年",
@@ -84692,11 +86432,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成15年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成15年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成14年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成14年-Point",
       "type": "circle",
       "source": "浸水履歴_平成14年",
       "source-layer": "浸水履歴_平成14年",
@@ -84808,11 +86548,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成14年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成14年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成14年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成14年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成14年",
       "source-layer": "浸水履歴_平成14年",
@@ -84887,11 +86627,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成14年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成14年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成13年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成13年-Point",
       "type": "circle",
       "source": "浸水履歴_平成13年",
       "source-layer": "浸水履歴_平成13年",
@@ -85003,11 +86743,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成13年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成13年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成13年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成13年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成13年",
       "source-layer": "浸水履歴_平成13年",
@@ -85082,11 +86822,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成13年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成13年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成12年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成12年-Point",
       "type": "circle",
       "source": "浸水履歴_平成12年",
       "source-layer": "浸水履歴_平成12年",
@@ -85198,11 +86938,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成12年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成12年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成12年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成12年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成12年",
       "source-layer": "浸水履歴_平成12年",
@@ -85277,11 +87017,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成12年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成12年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成11年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成11年-Point",
       "type": "circle",
       "source": "浸水履歴_平成11年",
       "source-layer": "浸水履歴_平成11年",
@@ -85393,11 +87133,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成11年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成11年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成11年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成11年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成11年",
       "source-layer": "浸水履歴_平成11年",
@@ -85472,11 +87212,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成11年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成11年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成10年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成10年-Point",
       "type": "circle",
       "source": "浸水履歴_平成10年",
       "source-layer": "浸水履歴_平成10年",
@@ -85588,11 +87328,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成10年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成10年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成10年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成10年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成10年",
       "source-layer": "浸水履歴_平成10年",
@@ -85667,11 +87407,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成10年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成10年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成9年-Point",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成9年-Point",
       "type": "circle",
       "source": "浸水履歴_平成9年",
       "source-layer": "浸水履歴_平成9年",
@@ -85783,11 +87523,11 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成9年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成9年"
       }
     },
     {
-      "id": "防災/浸水履歴（平成9年～令和5年）/平成9年-Symbol",
+      "id": "防災/浸水履歴（平成9年～令和7年）/平成9年-Symbol",
       "type": "symbol",
       "source": "浸水履歴_平成9年",
       "source-layer": "浸水履歴_平成9年",
@@ -85862,7 +87602,7 @@
         ]
       },
       "metadata": {
-        "menuId": "防災/浸水履歴（平成9年～令和5年）/平成9年"
+        "menuId": "防災/浸水履歴（平成9年～令和7年）/平成9年"
       }
     },
     {
@@ -103548,6 +105288,82 @@
       },
       "metadata": {
         "menuId": "こども・教育/通学路/黒石小学校"
+      }
+    },
+    {
+      "id": "こども・教育/子どもを守る家-Symbol",
+      "type": "symbol",
+      "source": "子どもを守る家",
+      "source-layer": "子どもを守る家",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": "randoseru",
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#c71585"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "こども・教育/子どもを守る家"
       }
     },
     {
