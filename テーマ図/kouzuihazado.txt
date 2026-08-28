@@ -631,6 +631,14 @@
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/大井川地区_タクシー乗降区域/tiles.json"
     },
+    "交通事故_2024": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85_2024/tiles.json"
+    },
+    "交通事故_2023": {
+      "type": "vector",
+      "url": "https://yaizu-smartcity.jp/tiles/%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85_2023/tiles.json"
+    },
     "交通事故_2022": {
       "type": "vector",
       "url": "https://yaizu-smartcity.jp/tiles/%E4%BA%A4%E9%80%9A%E4%BA%8B%E6%95%85_2022/tiles.json"
@@ -31671,7 +31679,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": [
@@ -31716,7 +31724,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": [
@@ -31761,7 +31769,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": [
@@ -31806,7 +31814,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": [
@@ -31851,7 +31859,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "fill-color": [
@@ -36786,6 +36794,96 @@
       },
       "metadata": {
         "menuId": "交通/デマンドタクシー/大井川地区（乗降区域）"
+      }
+    },
+    {
+      "id": "交通/交通事故分析情報/2024年-Polygon",
+      "type": "fill",
+      "source": "交通事故_2024",
+      "source-layer": "交通事故_2024",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#33cccc"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2024年"
+      }
+    },
+    {
+      "id": "交通/交通事故分析情報/2023年-Polygon",
+      "type": "fill",
+      "source": "交通事故_2023",
+      "source-layer": "交通事故_2023",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "fill-color": [
+          "case",
+          [
+            "has",
+            "fill"
+          ],
+          [
+            "get",
+            "fill"
+          ],
+          "#165e83"
+        ],
+        "fill-opacity": [
+          "case",
+          [
+            "has",
+            "fill-opacity"
+          ],
+          [
+            "get",
+            "fill-opacity"
+          ],
+          0.35
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2023年"
       }
     },
     {
@@ -43544,7 +43642,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -43601,7 +43699,7 @@
         "LineString"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -43663,7 +43761,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -43720,7 +43818,7 @@
         "LineString"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -43782,7 +43880,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -43839,7 +43937,7 @@
         "LineString"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -43901,7 +43999,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -43958,7 +44056,7 @@
         "LineString"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -44020,7 +44118,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -44077,7 +44175,7 @@
         "LineString"
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "line-color": [
@@ -57098,6 +57196,244 @@
       }
     },
     {
+      "id": "交通/交通事故分析情報/2024年-Polygon-outline",
+      "type": "line",
+      "source": "交通事故_2024",
+      "source-layer": "交通事故_2024",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#33cccc"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2024年"
+      }
+    },
+    {
+      "id": "交通/交通事故分析情報/2024年-LineString",
+      "type": "line",
+      "source": "交通事故_2024",
+      "source-layer": "交通事故_2024",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#33cccc"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2024年"
+      }
+    },
+    {
+      "id": "交通/交通事故分析情報/2023年-Polygon-outline",
+      "type": "line",
+      "source": "交通事故_2023",
+      "source-layer": "交通事故_2023",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#165e83"
+        ],
+        "line-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2023年"
+      }
+    },
+    {
+      "id": "交通/交通事故分析情報/2023年-LineString",
+      "type": "line",
+      "source": "交通事故_2023",
+      "source-layer": "交通事故_2023",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "LineString"
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "line-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#165e83"
+        ],
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          9,
+          1,
+          12,
+          2,
+          14,
+          5,
+          20,
+          10
+        ],
+        "line-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2023年"
+      }
+    },
+    {
       "id": "交通/交通事故分析情報/2022年-Polygon-outline",
       "type": "line",
       "source": "交通事故_2022",
@@ -66193,7 +66529,7 @@
           0,
           1
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -66245,7 +66581,7 @@
           0,
           1
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -66297,7 +66633,7 @@
           0,
           1
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -66349,7 +66685,7 @@
           0,
           1
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -66401,7 +66737,7 @@
           0,
           1
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "text-color": [
@@ -72092,6 +72428,110 @@
       },
       "metadata": {
         "menuId": "交通/デマンドタクシー/大井川地区（乗降区域）"
+      }
+    },
+    {
+      "id": "交通/交通事故分析情報/2024年-Label",
+      "type": "symbol",
+      "source": "交通事故_2024",
+      "source-layer": "交通事故_2024",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2024年"
+      }
+    },
+    {
+      "id": "交通/交通事故分析情報/2023年-Label",
+      "type": "symbol",
+      "source": "交通事故_2023",
+      "source-layer": "交通事故_2023",
+      "filter": [
+        "==",
+        [
+          "geometry-type"
+        ],
+        "Point"
+      ],
+      "layout": {
+        "text-field": [
+          "get",
+          "title"
+        ],
+        "text-size": 12,
+        "text-font": [
+          "NotoSansJP-Regular"
+        ],
+        "text-anchor": "center",
+        "text-padding": 2,
+        "text-offset": [
+          0,
+          1
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "text-color": [
+          "string",
+          [
+            "get",
+            "text-color"
+          ],
+          "#000000"
+        ],
+        "text-halo-width": 2.5,
+        "text-halo-color": [
+          "string",
+          [
+            "get",
+            "text-halo-color"
+          ],
+          "#ffffff"
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2023年"
       }
     },
     {
@@ -80221,7 +80661,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "circle-radius": [
@@ -80358,7 +80798,7 @@
           "get",
           "marker-symbol"
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "icon-color": [
@@ -80416,7 +80856,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "circle-radius": [
@@ -80553,7 +80993,7 @@
           "get",
           "marker-symbol"
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "icon-color": [
@@ -80611,7 +81051,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "circle-radius": [
@@ -80748,7 +81188,7 @@
           "get",
           "marker-symbol"
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "icon-color": [
@@ -80806,7 +81246,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "circle-radius": [
@@ -80943,7 +81383,7 @@
           "get",
           "marker-symbol"
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "icon-color": [
@@ -81001,7 +81441,7 @@
         ]
       ],
       "layout": {
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "circle-radius": [
@@ -81138,7 +81578,7 @@
           "get",
           "marker-symbol"
         ],
-        "visibility": "none"
+        "visibility": "visible"
       },
       "paint": {
         "icon-color": [
@@ -99329,6 +99769,396 @@
       },
       "metadata": {
         "menuId": "交通/デマンドタクシー/大井川地区（乗降区域）"
+      }
+    },
+    {
+      "id": "交通/交通事故分析情報/2024年-Point",
+      "type": "circle",
+      "source": "交通事故_2024",
+      "source-layer": "交通事故_2024",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#33cccc"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#33cccc"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2024年"
+      }
+    },
+    {
+      "id": "交通/交通事故分析情報/2024年-Symbol",
+      "type": "symbol",
+      "source": "交通事故_2024",
+      "source-layer": "交通事故_2024",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#33cccc"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2024年"
+      }
+    },
+    {
+      "id": "交通/交通事故分析情報/2023年-Point",
+      "type": "circle",
+      "source": "交通事故_2023",
+      "source-layer": "交通事故_2023",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ],
+        [
+          "!",
+          [
+            "any",
+            [
+              "has",
+              "marker-symbol"
+            ]
+          ]
+        ]
+      ],
+      "layout": {
+        "visibility": "none"
+      },
+      "paint": {
+        "circle-radius": [
+          "case",
+          [
+            "==",
+            "small",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          7,
+          [
+            "==",
+            "large",
+            [
+              "get",
+              "marker-size"
+            ]
+          ],
+          13,
+          7
+        ],
+        "circle-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#165e83"
+        ],
+        "circle-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          0.6
+        ],
+        "circle-stroke-width": [
+          "case",
+          [
+            "has",
+            "stroke-width"
+          ],
+          [
+            "get",
+            "stroke-width"
+          ],
+          1
+        ],
+        "circle-stroke-color": [
+          "case",
+          [
+            "has",
+            "stroke"
+          ],
+          [
+            "get",
+            "stroke"
+          ],
+          "#165e83"
+        ],
+        "circle-stroke-opacity": [
+          "case",
+          [
+            "has",
+            "stroke-opacity"
+          ],
+          [
+            "get",
+            "stroke-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2023年"
+      }
+    },
+    {
+      "id": "交通/交通事故分析情報/2023年-Symbol",
+      "type": "symbol",
+      "source": "交通事故_2023",
+      "source-layer": "交通事故_2023",
+      "filter": [
+        "all",
+        [
+          "==",
+          [
+            "geometry-type"
+          ],
+          "Point"
+        ]
+      ],
+      "layout": {
+        "icon-size": [
+          "case",
+          [
+            "has",
+            "marker-size"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "marker-size"
+            ],
+            "small",
+            0.3,
+            "large",
+            0.7,
+            0.5
+          ],
+          0.5
+        ],
+        "icon-allow-overlap": true,
+        "icon-ignore-placement": true,
+        "icon-anchor": "bottom",
+        "icon-rotate": [
+          "get",
+          "_rotate"
+        ],
+        "icon-image": [
+          "get",
+          "marker-symbol"
+        ],
+        "visibility": "none"
+      },
+      "paint": {
+        "icon-color": [
+          "case",
+          [
+            "has",
+            "marker-color"
+          ],
+          [
+            "get",
+            "marker-color"
+          ],
+          "#165e83"
+        ],
+        "icon-opacity": [
+          "case",
+          [
+            "has",
+            "marker-opacity"
+          ],
+          [
+            "get",
+            "marker-opacity"
+          ],
+          1
+        ]
+      },
+      "metadata": {
+        "menuId": "交通/交通事故分析情報/2023年"
       }
     },
     {
