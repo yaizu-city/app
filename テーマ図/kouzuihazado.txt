@@ -33389,7 +33389,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-color": [
@@ -33434,7 +33434,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "fill-color": [
@@ -48164,7 +48164,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -48221,7 +48221,7 @@
         "LineString"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -48283,7 +48283,7 @@
         "Polygon"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -48340,7 +48340,7 @@
         "LineString"
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "line-color": [
@@ -68505,7 +68505,7 @@
           0,
           1
         ],
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -68557,7 +68557,7 @@
           0,
           1
         ],
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "text-color": [
@@ -88071,7 +88071,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "circle-radius": [
@@ -88208,7 +88208,7 @@
           "get",
           "marker-symbol"
         ],
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "icon-color": [
@@ -88266,7 +88266,7 @@
         ]
       ],
       "layout": {
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "circle-radius": [
@@ -88403,7 +88403,7 @@
           "get",
           "marker-symbol"
         ],
-        "visibility": "visible"
+        "visibility": "none"
       },
       "paint": {
         "icon-color": [
